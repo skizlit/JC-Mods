@@ -1,0 +1,16 @@
+[
+{
+  "modid": "jcmods",
+  "name": "JC Mods",
+  "description": "A collection of fun things.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Skizlit"],
+  "credits": "Skizlit",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

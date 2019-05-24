@@ -1,0 +1,43 @@
+# Environment Changes #
+######################
+*.classpath
+*.project
+/run
+/.gradle
+build
+output
+MDK.zip
+
+# Eclipse            #
+######################
+/eclipse
+bin
+*.launch
+/.settings
+.metadata
+.metadata
+
+# Idea.              #
+######################
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# Other              #
+######################
+*.txt
+*.launch
+*.blend1
+*.blend2
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
