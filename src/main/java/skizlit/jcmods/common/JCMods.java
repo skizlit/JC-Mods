@@ -3,22 +3,15 @@ package skizlit.jcmods.common;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = JCMods.MOD_ID, name = JCMods.MOD_NAME, version = JCMods.MOD_VERSION)
-@EventBusSubscriber()
 public class JCMods
 {
     public static final String MOD_ID = "jcmods";
@@ -45,7 +38,7 @@ public class JCMods
     /**
      * JC Mods creative tab
      */
-    public static CreativeTabJCMods tabJCMods = new CreativeTabJCMods();
+
     
     @EventHandler
     public void init(FMLPreInitializationEvent event)
@@ -63,27 +56,5 @@ public class JCMods
     public void init(FMLPostInitializationEvent event)
     {
     	
-    }
-    
-    @SubscribeEvent
-    public static void onItemRegister(RegistryEvent.Register<Item> event) {
-        // Register items and itemBlocks
-    	event.getRegistry().registerAll(JCModsItems.ITEMS.toArray(new Item[0]));
-    }
-    
-    @SubscribeEvent
-    public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-        // Register items and itemBlocks
-    	event.getRegistry().registerAll(JCModsBlocks.BLOCKS.toArray(new Block[0]));
-    	
-    	// Update Harvest level of Blocks from Default
-    	proxy.updateBlockStats();
-    }
-    
-    @SubscribeEvent
-    public static void onModelRegister(ModelRegistryEvent event) {
-        // Register items and itemBlocks
-    	proxy.registerItemModels();
-    	proxy.registerItemBlocksModels();
     }
 }
