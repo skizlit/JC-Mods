@@ -9,6 +9,8 @@ public class CommonProxy {
 	public void registerItemBlocksModels() {}
 	
 	public void updateBlockStats() {
+		//Set Harvest Levels
 		JCModsBlocks.BLOCK_NICKEL.setHarvestLevel("pickaxe", 1);
+		JCModsBlocks.ORE_NICKEL.setHarvestLevel("pickaxe", 1);
 	}	
 }
