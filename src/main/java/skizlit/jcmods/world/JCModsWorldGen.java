@@ -21,9 +21,9 @@ public class JCModsWorldGen implements IWorldGenerator{
 	}
 	
 	private void generateOverworld(Random rand, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(JCModsBlocks.ORE_NICKEL.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 16, 64, rand.nextInt(10) + 4, 12);
-		generateOre(JCModsBlocks.ORE_RHODIUM.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 16, 64, rand.nextInt(7) + 3, 9);
-		generateOre(JCModsBlocks.ORE_TANZANITE.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 16, 64, rand.nextInt(8) + 4, 10);
+		generateOre(JCModsBlocks.ORE_NICKEL.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 5, 64, rand.nextInt(10) + 4, 12);
+		generateOre(JCModsBlocks.ORE_RHODIUM.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 5, 30, rand.nextInt(7) + 4, 9);
+		generateOre(JCModsBlocks.ORE_TANZANITE.getDefaultState(), world, rand, chunkX * 16, chunkZ * 16, 5, 20, rand.nextInt(8) + 4, 10);
 	}
 	
 	private void generateOre(IBlockState state, World world, Random rand, int x, int z, int minY, int maxY, int size, int chances) {
