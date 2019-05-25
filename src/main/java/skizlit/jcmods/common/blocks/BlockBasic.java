@@ -1,11 +1,11 @@
-package skizlit.jcmods.blocks;
+package skizlit.jcmods.common.blocks;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BasicBlock extends BlockBaseJCMods{
+public class BlockBasic extends BlockBaseJCMods{
 	
-	public BasicBlock(String name, Material material) {
+	public BlockBasic(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.METAL);
 		setHardness(this.getBasicBlockHardness());

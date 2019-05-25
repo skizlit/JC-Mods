@@ -1,13 +1,16 @@
-package skizlit.jcmods.blocks;
+package skizlit.jcmods.common.blocks;
+
+import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.util.IModelled;
+import skizlit.jcmods.common.util.IModelled;
 
 public class BlockBaseJCMods extends Block implements IModelled{
 
@@ -25,4 +28,10 @@ public class BlockBaseJCMods extends Block implements IModelled{
 	public void registerModels() {
 		JCMods.proxy.registerItem(Item.getItemFromBlock(this), 0, "Inventory");
 	}
+	
+	@Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return Item.getItemFromBlock(this);
+    }
 }

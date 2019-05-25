@@ -1,9 +1,9 @@
-package skizlit.jcmods.item;
+package skizlit.jcmods.common.item;
 
 import net.minecraft.item.Item;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.util.IModelled;
+import skizlit.jcmods.common.util.IModelled;
 
 public class ItemBaseJCMods extends Item implements IModelled{
 	
