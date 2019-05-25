@@ -7,7 +7,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import skizlit.jcmods.blocks.BasicBlock;
 import skizlit.jcmods.blocks.BlockBaseJCMods;
-import skizlit.jcmods.util.IModelled;
 
 public class JCModsBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
