@@ -1,11 +1,11 @@
-package skizlit.jcmods.item;
+package skizlit.jcmods.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import skizlit.jcmods.blocks.JCModsBlocks;
 import skizlit.jcmods.common.JCMods;
+import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
 import skizlit.jcmods.util.IModelled;
 

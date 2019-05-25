@@ -16,7 +16,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import skizlit.jcmods.blocks.JCModsBlocks;
 
 @Mod(modid = JCMods.MOD_ID, name = JCMods.MOD_NAME, version = JCMods.MOD_VERSION)
 @EventBusSubscriber()
@@ -76,6 +75,9 @@ public class JCMods
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         // Register items and itemBlocks
     	event.getRegistry().registerAll(JCModsBlocks.BLOCKS.toArray(new Block[0]));
+    	
+    	// Update Harvest level of Blocks from Default
+    	proxy.updateBlockStats();
     }
     
     @SubscribeEvent

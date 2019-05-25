@@ -8,4 +8,7 @@ public class CommonProxy {
 	public void registerItemModels() {}
 	public void registerItemBlocksModels() {}
 	
+	public void updateBlockStats() {
+		JCModsBlocks.BLOCK_NICKEL.setHarvestLevel("pickaxe", 1);
+	}	
 }

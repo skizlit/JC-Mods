@@ -6,8 +6,8 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import skizlit.jcmods.blocks.JCModsBlocks;
 import skizlit.jcmods.common.CommonProxy;
+import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
 import skizlit.jcmods.util.IModelled;
 

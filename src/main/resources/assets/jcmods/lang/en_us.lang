@@ -22,9 +22,9 @@ item.nuggetNickel.name=Nickel Nugget
 item.nuggetRhodium.name=Rhodium Nugget
 
 # Blocks
-tile.blockNickel.name=Nickel Block
-tile.blockRhodium.name=Rhodium Block
-tile.blockTanzanite.name=Tanzanite Block
+tile.blockNickel.name=Block of Nickel
+tile.blockRhodium.name=Block of Rhodium
+tile.blockTanzanite.name=Block of Tanzanite
 
 # Ores
 tile.oreNickel.name=Nickel Ore
