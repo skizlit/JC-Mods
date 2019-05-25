@@ -8,18 +8,16 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import skizlit.jcmods.common.JCModsItems;
 
-public class BlockGemOre extends BlockBaseJCMods{
+public class BlockTanzaniteOre extends BlockBaseJCMods{
 	
 	protected Item bDroppedItem;
 	
-	public BlockGemOre(String name, Material material) {
+	public BlockTanzaniteOre(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.STONE);
 		setHardness(this.getOreBlockHardness());
 		setResistance(this.getOreBlockResistance());
 		setHarvestLevel("pickaxe", this.getOreBlockHarvestLevel());
-		
-		setOreItemDropped(name);
 	}
 	
 	@Override
@@ -28,14 +26,6 @@ public class BlockGemOre extends BlockBaseJCMods{
 		return JCModsItems.GEM_TANZANITE;
     }
 	
-	public void setOreItemDropped(String name) {		
-		bDroppedItem = Item.getItemFromBlock(this);
-		
-		if (name.equals("blockTanzanite")) {
-			bDroppedItem = JCModsItems.GEM_TANZANITE;
-		}
-	}
-
 	public float getOreBlockResistance() {
 		return 15;
 	}
