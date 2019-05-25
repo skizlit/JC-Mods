@@ -3,6 +3,7 @@ package skizlit.jcmods.common;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -71,8 +72,18 @@ public class JCMods
     }
     
     @SubscribeEvent
+    public static void onBlockRegister(RegistryEvent.Register<Block> event) {
+        // Register items and itemBlocks
+    	event.getRegistry().registerAll(JCModsBlocks.BLOCKS.toArray(new Block[0]));
+    	
+    	// Update Harvest level of Blocks from Default
+    	proxy.updateBlockStats();
+    }
+    
+    @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
         // Register items and itemBlocks
     	proxy.registerItemModels();
+    	proxy.registerItemBlocksModels();
     }
 }
