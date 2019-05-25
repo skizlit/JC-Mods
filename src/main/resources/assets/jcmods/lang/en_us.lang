@@ -1,16 +1,16 @@
 itemGroup.tabJCMods=JC Mods
 
-item.dirty_dust_nickel.name=Dirty Nickel Dust
-item.dirty_dust_rhodium.name=Dirty Rhodium Dust
+item.DirtyDustNickel.name=Dirty Nickel Dust
+item.DirtyDustRhodium.name=Dirty Rhodium Dust
 
-item.dust_nickel.name=Nickel Dust
-item.dust_rhodium.name=Rhodium Dust
-item.dust_tanzanite.name=Tanzanite Dust
+item.DustNickel.name=Nickel Dust
+item.DustRhodium.name=Rhodium Dust
+item.DustTanzanite.name=Tanzanite Dust
 
-item.gem_tanzanite.name=Tanzanite
+item.GemTanzanite.name=Tanzanite
 
-item.ingot_nickel.name=Nickel Ingot
-item.ingot_rhodium.name=Rhodium Ingot
+item.IngotNickel.name=Nickel Ingot
+item.IngotRhodium.name=Rhodium Ingot
 
-item.nugget_nickel.name=Nickel Nugget
-item.nugget_rhodium.name=Rhodium Nugget
+item.NuggetNickel.name=Nickel Nugget
+item.NuggetRhodium.name=Rhodium Nugget

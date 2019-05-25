@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "jcmods:items/Nugget_Rhodium"
+       "layer0": "jcmods:items/NuggetRhodium"
    }
 }

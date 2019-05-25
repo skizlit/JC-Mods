@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "jcmods:items/Dirty_Dust_Rhodium"
+       "layer0": "jcmods:items/IngotRhodium"
    }
 }
