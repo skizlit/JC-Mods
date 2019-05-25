@@ -1,32 +1,16 @@
-# Creative tab
 itemGroup.tabJCMods=JC Mods
 
-# Dirty Dust
-item.dirtydustNickel.name=Dirty Nickel Dust
-item.dirtydustRhodium.name=Dirty Rhodium Dust
+item.dirty_dust_nickel.name=Dirty Nickel Dust
+item.dirty_dust_rhodium.name=Dirty Rhodium Dust
 
-# Dust
-item.dustNickel.name=Nickel Dust
-item.dustRhodium.name=Rhodium Dust
-item.dustTanzanite.name=Tanzanite Dust
+item.dust_nickel.name=Nickel Dust
+item.dust_rhodium.name=Rhodium Dust
+item.dust_tanzanite.name=Tanzanite Dust
 
-# Gems
-item.gemTanzanite.name=Tanzanite
+item.gem_tanzanite.name=Tanzanite
 
-# Ingots
-item.ingotNickel.name=Nickel Ingot
-item.ingotRhodium.name=Rhodium Ingot
+item.ingot_nickel.name=Nickel Ingot
+item.ingot_rhodium.name=Rhodium Ingot
 
-# Nuggets
-item.nuggetNickel.name=Nickel Nugget
-item.nuggetRhodium.name=Rhodium Nugget
-
-# Blocks
-tile.blockNickel.name=Block of Nickel
-tile.blockRhodium.name=Block of Rhodium
-tile.blockTanzanite.name=Block of Tanzanite
-
-# Ores
-tile.oreNickel.name=Nickel Ore
-tile.oreRhodium.name=Rhodium Ore
-tile.oreTanzanite.name=Tanzanite Ore
+item.nugget_nickel.name=Nickel Nugget
+item.nugget_rhodium.name=Rhodium Nugget
