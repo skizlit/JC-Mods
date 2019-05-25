@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import skizlit.jcmods.common.recipe.JCModsRecipes;
 import skizlit.jcmods.common.world.JCModsWorldGen;
 
 @Mod(modid = JCMods.MOD_ID, name = JCMods.MOD_NAME, version = JCMods.MOD_VERSION)
@@ -58,7 +59,7 @@ public class JCMods
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	
+    	JCModsRecipes.init();
     }
     
     @EventHandler

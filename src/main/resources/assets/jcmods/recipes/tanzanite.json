@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+   
+    "key":
+    {
+        "A":
+        {
+            "item": "jcmods:gemTanzanite"
+        }
+    },
+   
+    "result":
+    {
+        "item": "jcmods:blockTanzanite",
+        "count": 1
+    }
+}
