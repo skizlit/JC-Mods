@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import skizlit.jcmods.world.JCModsWorldGen;
+import skizlit.jcmods.common.world.JCModsWorldGen;
 
 @Mod(modid = JCMods.MOD_ID, name = JCMods.MOD_NAME, version = JCMods.MOD_VERSION)
 @EventBusSubscriber()

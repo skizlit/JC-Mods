@@ -9,7 +9,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import skizlit.jcmods.common.CommonProxy;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.util.IModelled;
+import skizlit.jcmods.common.util.IModelled;
 
 @SideOnly(Side.CLIENT)
 public class ClientProxy extends CommonProxy {

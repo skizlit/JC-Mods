@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.item.Item;
-import skizlit.jcmods.item.ItemBaseJCMods;
+import skizlit.jcmods.common.item.ItemBaseJCMods;
 
 public class JCModsItems {
 	

@@ -1,4 +1,4 @@
-package skizlit.jcmods.blocks;
+package skizlit.jcmods.common.blocks;
 
 import java.util.Random;
 
@@ -10,7 +10,7 @@ import net.minecraft.item.ItemBlock;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.util.IModelled;
+import skizlit.jcmods.common.util.IModelled;
 
 public class BlockBaseJCMods extends Block implements IModelled{
 

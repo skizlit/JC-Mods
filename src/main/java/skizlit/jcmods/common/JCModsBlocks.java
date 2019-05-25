@@ -5,9 +5,9 @@ import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import skizlit.jcmods.blocks.BlockBasic;
-import skizlit.jcmods.blocks.BlockTanzaniteOre;
-import skizlit.jcmods.blocks.BlockOre;
+import skizlit.jcmods.common.blocks.BlockBasic;
+import skizlit.jcmods.common.blocks.BlockOre;
+import skizlit.jcmods.common.blocks.BlockTanzaniteOre;
 
 public class JCModsBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();

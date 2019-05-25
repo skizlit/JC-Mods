@@ -1,4 +1,4 @@
-package skizlit.jcmods.world;
+package skizlit.jcmods.common.world;
 
 import java.util.Random;
 
