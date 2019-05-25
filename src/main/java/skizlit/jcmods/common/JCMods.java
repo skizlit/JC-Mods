@@ -3,6 +3,7 @@ package skizlit.jcmods.common;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import skizlit.jcmods.blocks.JCModsBlocks;
 
 @Mod(modid = JCMods.MOD_ID, name = JCMods.MOD_NAME, version = JCMods.MOD_VERSION)
 @EventBusSubscriber()
@@ -71,8 +73,15 @@ public class JCMods
     }
     
     @SubscribeEvent
+    public static void onBlockRegister(RegistryEvent.Register<Block> event) {
+        // Register items and itemBlocks
+    	event.getRegistry().registerAll(JCModsBlocks.BLOCKS.toArray(new Block[0]));
+    }
+    
+    @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
         // Register items and itemBlocks
     	proxy.registerItemModels();
+    	proxy.registerItemBlocksModels();
     }
 }

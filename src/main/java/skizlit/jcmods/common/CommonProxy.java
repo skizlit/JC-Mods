@@ -6,5 +6,6 @@ public class CommonProxy {
 		
 	public void registerItem(Item item, int meta, String id) {}
 	public void registerItemModels() {}
+	public void registerItemBlocksModels() {}
 	
 }

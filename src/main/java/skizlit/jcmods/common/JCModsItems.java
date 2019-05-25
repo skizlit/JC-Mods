@@ -11,22 +11,22 @@ public class JCModsItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 
 	// Dirty Dust
-	public static final Item DIRTY_DUST_NICKEL = new ItemBaseJCMods("DirtyDustNickel");
-	public static final Item DIRTY_DUST_RHODIUM = new ItemBaseJCMods("DirtyDustRhodium");
+	public static final Item DIRTY_DUST_NICKEL = new ItemBaseJCMods("dirtydustNickel");
+	public static final Item DIRTY_DUST_RHODIUM = new ItemBaseJCMods("dirtydustRhodium");
 	
 	// Dust
-	public static final Item DUST_NICKEL = new ItemBaseJCMods("DustNickel");
-	public static final Item DUST_RHODIUM = new ItemBaseJCMods("DustRhodium");
-	public static final Item DUST_TANZANITE = new ItemBaseJCMods("DustTanzanite");
+	public static final Item DUST_NICKEL = new ItemBaseJCMods("dustNickel");
+	public static final Item DUST_RHODIUM = new ItemBaseJCMods("dustRhodium");
+	public static final Item DUST_TANZANITE = new ItemBaseJCMods("dustTanzanite");
 			
 	// Gem
-	public static final Item GEM_TANZANITE = new ItemBaseJCMods("GemTanzanite");
+	public static final Item GEM_TANZANITE = new ItemBaseJCMods("gemTanzanite");
 	
 	// Ingots
-	public static final Item INGOT_NICKEL = new ItemBaseJCMods("IngotNickel");
-	public static final Item INGOT_RHODIUM = new ItemBaseJCMods("IngotRhodium");
+	public static final Item INGOT_NICKEL = new ItemBaseJCMods("ingotNickel");
+	public static final Item INGOT_RHODIUM = new ItemBaseJCMods("ingotRhodium");
 	
 	//Nugget
-	public static final Item NUGGET_NICKEL = new ItemBaseJCMods("NuggetNickel");
-	public static final Item NUGGET_RHODIUM = new ItemBaseJCMods("NuggetRhodium");
+	public static final Item NUGGET_NICKEL = new ItemBaseJCMods("nuggetNickel");
+	public static final Item NUGGET_RHODIUM = new ItemBaseJCMods("nuggetRhodium");
 }
