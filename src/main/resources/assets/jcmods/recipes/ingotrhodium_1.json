@@ -1,8 +1,9 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "forge:ore_shapeless",
     "ingredients": [
     {
-      "item": "jcmods:blockRhodium"
+     	"type": "forge:ore_dict",
+      	"ore": "blockRhodium"
     }   
     ], 
     "result": {

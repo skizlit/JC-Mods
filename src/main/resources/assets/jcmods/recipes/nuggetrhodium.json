@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "forge:ore_shapeless",
     "ingredients": [
     {
-      "item": "jcmods:ingotRhodium"
+      "item": "#INGOT_RHODIUM"
     }  
     ],
     "result": {

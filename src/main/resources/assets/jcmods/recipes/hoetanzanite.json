@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "forge:ore_shaped",
     "pattern": [
-        "AA ",
-        " B ",
-        " B "
+        "AA",
+        " B",
+        " B"
     ],
     "key": {
         "A": {
-            "item": "jcmods:gemTanzanite"
+            "item": "#GEM_TANZANITE"
         },
         "B": {
-            "item": "minecraft:stick"
+            "item": "#STICK_WOOD"
         }
     },
     "result": {

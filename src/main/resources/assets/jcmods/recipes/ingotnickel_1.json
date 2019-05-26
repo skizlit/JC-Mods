@@ -1,8 +1,9 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "forge:ore_shapeless",
     "ingredients": [
     {
-      "item": "jcmods:blockNickel"
+    	"type": "forge:ore_dict",
+      	"ore": "blockNickel"
     }   
     ],
     "result": {

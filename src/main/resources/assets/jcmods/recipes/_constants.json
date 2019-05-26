@@ -1,0 +1,30 @@
+[
+  	{
+    "name": "STICK_WOOD",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "stickWood"
+    	}
+  	},
+  	{
+    "name": "INGOT_NICKEL",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "ingotNickel"
+    	}
+  	},
+  	{
+    "name": "INGOT_RHODIUM",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "ingotRhodium"
+    	}
+  	},
+  	{
+    "name": "GEM_TANZANITE",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "gemTanzanite"
+    	}
+  	}
+]

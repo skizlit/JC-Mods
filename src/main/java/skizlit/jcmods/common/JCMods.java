@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import skizlit.jcmods.common.intergration.OreDictionaryRegistery;
 import skizlit.jcmods.common.recipe.JCModsRecipes;
 import skizlit.jcmods.common.world.JCModsWorldGen;
 
@@ -69,12 +70,6 @@ public class JCMods
     }
     
     @SubscribeEvent
-    public static void onItemRegister(RegistryEvent.Register<Item> event) {
-        // Register items and itemBlocks
-    	event.getRegistry().registerAll(JCModsItems.ITEMS.toArray(new Item[0]));
-    }
-    
-    @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         // Register items and itemBlocks
     	event.getRegistry().registerAll(JCModsBlocks.BLOCKS.toArray(new Block[0]));
@@ -83,6 +78,15 @@ public class JCMods
     	proxy.updateBlockStats();
     }
     
+    @SubscribeEvent
+    public static void onItemRegister(RegistryEvent.Register<Item> event) {
+        // Register items and itemBlocks
+    	event.getRegistry().registerAll(JCModsItems.ITEMS.toArray(new Item[0]));
+    	
+    	//Integrate OreDictionary
+    	OreDictionaryRegistery.registerOres();
+    }
+        
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
         // Register items and itemBlocks

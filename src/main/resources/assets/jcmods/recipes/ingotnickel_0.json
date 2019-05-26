@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shaped",  
+    "type": "forge:ore_shaped",  
     "pattern": [
         "AAA",
         "AAA",
@@ -8,7 +8,8 @@
     "key": {
         "A":
         {
-            "item": "jcmods:nuggetNickel"
+    		"type": "forge:ore_dict",
+      		"ore": "nuggetNickel"
         }
     },   
     "result": {

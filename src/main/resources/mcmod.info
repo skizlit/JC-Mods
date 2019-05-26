@@ -4,7 +4,7 @@
   "name": "JC Mods",
   "description": "A collection of fun things.",
   "version": "${version}",
-  "mcversion": "${mcversion}",
+  "mcversion": "${mc_version}",
   "url": "",
   "updateUrl": "",
   "authorList": ["Skizlit"],
