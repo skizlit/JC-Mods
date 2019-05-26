@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "A A",
+        "   "
+    ], 
+    "key": {
+        "A": {
+            "item": "jcmods:ingotRhodium"
+        }
+    }, 
+    "result": {
+        "item": "jcmods:rhodiumBoots",
+        "count": 1
+    }
+}

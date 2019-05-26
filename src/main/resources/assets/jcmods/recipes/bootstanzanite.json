@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "A A",
+        "   "
+    ], 
+    "key": {
+        "A": {
+            "item": "jcmods:gemTanzanite"
+        }
+    }, 
+    "result": {
+        "item": "jcmods:tanzaniteBoots",
+        "count": 1
+    }
+}

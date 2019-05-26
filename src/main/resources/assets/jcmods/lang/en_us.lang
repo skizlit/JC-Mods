@@ -1,3 +1,17 @@
+# Armor
+item.nickelBoots.name=Nickel Boots
+item.nickelChestplate.name=Nickel Chestplate
+item.nickelHelmet.name=Nickel Helmet
+item.nickelLeggings.name=Nickel Leggings
+item.rhodiumBoots.name=Rhodium Boots
+item.rhodiumChestplate.name=Rhodium Chestplate
+item.rhodiumHelmet.name=Rhodium Helmet
+item.rhodiumLeggings.name=Rhodium Leggings
+item.tanzaniteBoots.name=Tanzanite Boots
+item.tanzaniteChestplate.name=Tanzanite Chestplate
+item.tanzaniteHelmet.name=Tanzanite Helmet
+item.tanzaniteLeggings.name=Tanzanite Leggings
+
 # Blocks
 tile.blockNickel.name=Block of Nickel
 tile.blockRhodium.name=Block of Rhodium
