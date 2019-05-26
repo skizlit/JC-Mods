@@ -1,3 +1,22 @@
+# Armor
+item.nickelBoots.name=Nickel Boots
+item.nickelChestplate.name=Nickel Chestplate
+item.nickelHelmet.name=Nickel Helmet
+item.nickelLeggings.name=Nickel Leggings
+item.rhodiumBoots.name=Rhodium Boots
+item.rhodiumChestplate.name=Rhodium Chestplate
+item.rhodiumHelmet.name=Rhodium Helmet
+item.rhodiumLeggings.name=Rhodium Leggings
+item.tanzaniteBoots.name=Tanzanite Boots
+item.tanzaniteChestplate.name=Tanzanite Chestplate
+item.tanzaniteHelmet.name=Tanzanite Helmet
+item.tanzaniteLeggings.name=Tanzanite Leggings
+
+# Blocks
+tile.blockNickel.name=Block of Nickel
+tile.blockRhodium.name=Block of Rhodium
+tile.blockTanzanite.name=Block of Tanzanite
+
 # Creative tab
 itemGroup.tabJCMods=JC Mods
 
@@ -21,12 +40,24 @@ item.ingotRhodium.name=Rhodium Ingot
 item.nuggetNickel.name=Nickel Nugget
 item.nuggetRhodium.name=Rhodium Nugget
 
-# Blocks
-tile.blockNickel.name=Block of Nickel
-tile.blockRhodium.name=Block of Rhodium
-tile.blockTanzanite.name=Block of Tanzanite
-
 # Ores
 tile.oreNickel.name=Nickel Ore
 tile.oreRhodium.name=Rhodium Ore
 tile.oreTanzanite.name=Tanzanite Ore
+
+# Tools
+item.nickelAxe.name=Nickel Axe
+item.nickelHoe.name=Nickel Hoe
+item.nickelPickaxe.name=Nickel Pickaxe
+item.nickelShovel.name=Nickel Shovel
+item.nickelSword.name=Nickel Sword
+item.rhodiumAxe.name=Rhodium Axe
+item.rhodiumHoe.name=Rhodium Hoe
+item.rhodiumPickaxe.name=Rhodium Pickaxe
+item.rhodiumShovel.name=Rhodium Shovel
+item.rhodiumSword.name=Rhodium Sword
+item.tanzaniteAxe.name=Tanzanite Axe
+item.tanzaniteHoe.name=Tanzanite Hoe
+item.tanzanitePickaxe.name=Tanzanite Pickaxe
+item.tanzaniteShovel.name=Tanzanite Shovel
+item.tanzaniteSword.name=Tanzanite Sword

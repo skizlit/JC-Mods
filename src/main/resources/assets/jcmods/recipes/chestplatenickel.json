@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "AAA",
+        "AAA"
+    ], 
+    "key": {
+        "A": {
+            "item": "jcmods:ingotNickel"
+        }
+    }, 
+    "result": {
+        "item": "jcmods:nickelChestplate",
+        "count": 1
+    }
+}

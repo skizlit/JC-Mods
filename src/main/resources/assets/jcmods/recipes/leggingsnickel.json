@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A",
+        "A A"
+    ], 
+    "key": {
+        "A": {
+            "item": "jcmods:ingotNickel"
+        }
+    }, 
+    "result": {
+        "item": "jcmods:nickelLeggings",
+        "count": 1
+    }
+}

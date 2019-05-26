@@ -1,23 +1,17 @@
 {
-    "type": "minecraft:crafting_shaped",
-   
-    "pattern":
-    [
+    "type": "minecraft:crafting_shaped",  
+    "pattern": [
         "AAA",
         "AAA",
         "AAA"
-    ],
-   
-    "key":
-    {
+    ], 
+    "key": {
         "A":
         {
             "item": "jcmods:nuggetNickel"
         }
-    },
-   
-    "result":
-    {
+    },   
+    "result": {
         "item": "jcmods:ingotNickel",
         "count": 1
     }
