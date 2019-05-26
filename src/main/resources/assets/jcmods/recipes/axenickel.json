@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "forge:ore_shaped",
     "pattern": [
-        "AA ",
-        "AB ",
-        " B "
+        "AA",
+        "AB",
+        " B"
     ],
     "key": {
         "A": {
-            "item": "jcmods:ingotNickel"
+      		"item": "#INGOT_NICKEL"
         },
         "B": {
-            "item": "minecraft:stick"
+			"item": "#STICK_WOOD"
         }
     },
     "result": {

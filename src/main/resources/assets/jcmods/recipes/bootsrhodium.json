@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "forge:ore_shaped",
     "pattern": [
         "A A",
         "A A",
@@ -7,7 +7,7 @@
     ], 
     "key": {
         "A": {
-            "item": "jcmods:ingotRhodium"
+            "item": "#INGOT_RHODIUM"
         }
     }, 
     "result": {

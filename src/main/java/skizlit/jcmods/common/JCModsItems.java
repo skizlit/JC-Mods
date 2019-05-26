@@ -40,7 +40,21 @@ public class JCModsItems {
 	public static final ArmorMaterial ARMOR_MATERIAL_NICKEL = EnumHelper.addArmorMaterial("armorMaterialNickel", JCMods.MOD_ID + ":nickel", 15, nickel_Amounts, 14, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	public static final ArmorMaterial ARMOR_MATERIAL_RHODIUM = EnumHelper.addArmorMaterial("armorMaterialRhodium", JCMods.MOD_ID + ":rhodium", 40, rhodium_Amounts, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F);
 	public static final ArmorMaterial ARMOR_MATERIAL_TANZANITE = EnumHelper.addArmorMaterial("armorMaterialTanzanite", JCMods.MOD_ID + ":tanzanite", 33, rhodium_Amounts, 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);	
-		
+	
+	// Armors
+	public static final Item NICKEL_HELMET = new ArmorBaseJCMods("nickelHelmet", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.HEAD);
+	public static final Item NICKEL_LEGGINGS = new ArmorBaseJCMods("nickelLeggings", ARMOR_MATERIAL_NICKEL, 2, EntityEquipmentSlot.LEGS);
+	public static final Item NICKEL_CHESTPLATE = new ArmorBaseJCMods("nickelChestplate", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.CHEST);
+	public static final Item NICKEL_BOOTS = new ArmorBaseJCMods("nickelBoots", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.FEET);
+	public static final Item RHODIUM_HELMET = new ArmorBaseJCMods("rhodiumHelmet", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.HEAD);
+	public static final Item RHODIUM_LEGGINGS = new ArmorBaseJCMods("rhodiumLeggings", ARMOR_MATERIAL_RHODIUM, 2, EntityEquipmentSlot.LEGS);
+	public static final Item RHODIUM_CHESTPLATE = new ArmorBaseJCMods("rhodiumChestplate", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.CHEST);
+	public static final Item RHODIUM_BOOTS = new ArmorBaseJCMods("rhodiumBoots", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.FEET);
+	public static final Item TANZANITE_HELMET = new ArmorBaseJCMods("tanzaniteHelmet", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item TANZANITE_LEGGINGS = new ArmorBaseJCMods("tanzaniteLeggings", ARMOR_MATERIAL_TANZANITE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item TANZANITE_CHESTPLATE = new ArmorBaseJCMods("tanzaniteChestplate", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item TANZANITE_BOOTS = new ArmorBaseJCMods("tanzaniteBoots", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.FEET);
+	
 	// Dirty Dust
 	public static final Item DIRTY_DUST_NICKEL = new ItemBaseJCMods("dirtydustNickel");
 	public static final Item DIRTY_DUST_RHODIUM = new ItemBaseJCMods("dirtydustRhodium");
@@ -77,18 +91,4 @@ public class JCModsItems {
 	public static final ItemPickaxe TANZANITE_PICKAXE = new ToolPickaxe("tanzanitePickaxe", TOOL_MATERIAL_TANZANITE);
 	public static final ItemSpade TANZANITE_SHOVEL = new ToolSpade("tanzaniteShovel", TOOL_MATERIAL_TANZANITE);
 	public static final ItemSword TANZANITE_SWORD = new ToolSword("tanzaniteSword", TOOL_MATERIAL_TANZANITE);
-
-	// Armors
-	public static final Item NICKEL_HELMET = new ArmorBaseJCMods("nickelHelmet", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.HEAD);
-	public static final Item NICKEL_LEGGINGS = new ArmorBaseJCMods("nickelLeggings", ARMOR_MATERIAL_NICKEL, 2, EntityEquipmentSlot.LEGS);
-	public static final Item NICKEL_CHESTPLATE = new ArmorBaseJCMods("nickelChestplate", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.CHEST);
-	public static final Item NICKEL_BOOTS = new ArmorBaseJCMods("nickelBoots", ARMOR_MATERIAL_NICKEL, 1, EntityEquipmentSlot.FEET);
-	public static final Item RHODIUM_HELMET = new ArmorBaseJCMods("rhodiumHelmet", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.HEAD);
-	public static final Item RHODIUM_LEGGINGS = new ArmorBaseJCMods("rhodiumLeggings", ARMOR_MATERIAL_RHODIUM, 2, EntityEquipmentSlot.LEGS);
-	public static final Item RHODIUM_CHESTPLATE = new ArmorBaseJCMods("rhodiumChestplate", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.CHEST);
-	public static final Item RHODIUM_BOOTS = new ArmorBaseJCMods("rhodiumBoots", ARMOR_MATERIAL_RHODIUM, 1, EntityEquipmentSlot.FEET);
-	public static final Item TANZANITE_HELMET = new ArmorBaseJCMods("tanzaniteHelmet", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.HEAD);
-	public static final Item TANZANITE_LEGGINGS = new ArmorBaseJCMods("tanzaniteLeggings", ARMOR_MATERIAL_TANZANITE, 2, EntityEquipmentSlot.LEGS);
-	public static final Item TANZANITE_CHESTPLATE = new ArmorBaseJCMods("tanzaniteChestplate", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.CHEST);
-	public static final Item TANZANITE_BOOTS = new ArmorBaseJCMods("tanzaniteBoots", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.FEET);
 }

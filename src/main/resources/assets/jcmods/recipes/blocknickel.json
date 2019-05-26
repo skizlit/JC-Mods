@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "forge:ore_shaped",
     "pattern": [
         "AAA",
         "AAA",
@@ -7,7 +7,7 @@
     ], 
     "key": {
         "A": {
-            "item": "jcmods:ingotNickel"
+            "item": "#INGOT_NICKEL"
         }
     }, 
     "result": {
