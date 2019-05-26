@@ -1,18 +1,17 @@
 {
-    "type": "minecraft:crafting_shapeless",
- 
-    "ingredients":
-    [
- 
-    {
-      "item": "jcmods:blockTanzanite"
-    }
-    
-    ],
- 
-    "result":
-    {
-        "item": "jcmods:gemTanzanite",
-        "count": 9
+    "type": "minecraft:crafting_shaped",   
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],  
+    "key": {
+        "A": {
+            "item": "jcmods:gemTanzanite"
+        }
+    },   
+    "result": {
+        "item": "jcmods:blockTanzanite",
+        "count": 1
     }
 }

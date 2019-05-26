@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AA ",
+        "AB ",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "item": "jcmods:ingotRhodium"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "jcmods:rhodiumAxe",
+        "count": 1
+    }
+}

@@ -1,23 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-   
-    "pattern":
-    [
+    "type": "minecraft:crafting_shaped",   
+    "pattern": [
         "AAA",
         "AAA",
         "AAA"
-    ],
-   
-    "key":
-    {
-        "A":
-        {
+    ],  
+    "key": {
+        "A": {
             "item": "jcmods:ingotRhodium"
         }
-    },
-   
-    "result":
-    {
+    },   
+    "result": {
         "item": "jcmods:blockRhodium",
         "count": 1
     }

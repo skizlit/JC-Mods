@@ -1,17 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
- 
-    "ingredients":
-    [
- 
+    "ingredients": [
     {
       "item": "jcmods:ingotRhodium"
-    }
-   
+    }  
     ],
- 
-    "result":
-    {
+    "result": {
         "item": "jcmods:nuggetRhodium",
         "count": 9
     }

@@ -1,17 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
- 
-    "ingredients":
-    [
- 
+    "ingredients": [
     {
       "item": "jcmods:blockNickel"
-    }
-    
+    }   
     ],
- 
-    "result":
-    {
+    "result": {
         "item": "jcmods:ingotNickel",
         "count": 9
     }
