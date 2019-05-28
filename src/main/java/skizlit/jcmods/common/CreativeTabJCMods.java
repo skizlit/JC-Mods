@@ -13,6 +13,6 @@ public class CreativeTabJCMods extends CreativeTabs {
     @Nonnull
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(JCModsItems.INGOT_NICKEL);
+        return new ItemStack(JCModsItems.GEM_TANZANITE);
     }
 }

@@ -8,12 +8,12 @@ import skizlit.jcmods.common.JCModsItems;
 public class JCModsRecipes {
 	
 	public static void init() {
-		// Ore
-		GameRegistry.addSmelting(JCModsBlocks.ORE_NICKEL, new ItemStack(JCModsItems.INGOT_NICKEL, 1), 0.7f);
-		GameRegistry.addSmelting(JCModsBlocks.ORE_RHODIUM, new ItemStack(JCModsItems.INGOT_RHODIUM, 1), 1.0f);
+		// Ore		
+		GameRegistry.addSmelting(JCModsBlocks.ORE_NICKEL, new ItemStack(JCModsItems.INGOT, 1, 0), 0.7f);
+		GameRegistry.addSmelting(JCModsBlocks.ORE_RHODIUM, new ItemStack(JCModsItems.INGOT, 1, 1), 1.0f);
 		
 		// Dust
-		GameRegistry.addSmelting(JCModsItems.DUST_NICKEL, new ItemStack(JCModsItems.INGOT_NICKEL, 1), 0.7f);
-		GameRegistry.addSmelting(JCModsItems.DUST_RHODIUM, new ItemStack(JCModsItems.INGOT_RHODIUM, 1), 1.0f);
+		GameRegistry.addSmelting(JCModsItems.DUST_NICKEL, new ItemStack(JCModsItems.INGOT, 1, 0), 0.7f);
+		GameRegistry.addSmelting(JCModsItems.DUST_RHODIUM, new ItemStack(JCModsItems.INGOT, 1, 1), 1.0f);
 	}
 }

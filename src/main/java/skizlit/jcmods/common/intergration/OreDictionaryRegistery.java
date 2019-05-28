@@ -31,8 +31,8 @@ public class OreDictionaryRegistery {
 		OreDictionary.registerOre("gemTanzanite", new ItemStack(JCModsItems.GEM_TANZANITE));
 		
 		// Ingot
-		OreDictionary.registerOre("ingotNickel", new ItemStack(JCModsItems.INGOT_NICKEL));
-		OreDictionary.registerOre("ingotRhodium", new ItemStack(JCModsItems.INGOT_RHODIUM));
+		OreDictionary.registerOre("ingotNickel", new ItemStack(JCModsItems.INGOT, 1, 0));
+		OreDictionary.registerOre("ingotRhodium", new ItemStack(JCModsItems.INGOT, 1, 1));
 		
 		// Nugget
 		OreDictionary.registerOre("nuggetNickel", new ItemStack(JCModsItems.NUGGET_NICKEL));

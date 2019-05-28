@@ -15,6 +15,7 @@ import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 import skizlit.jcmods.common.item.ItemBaseJCMods;
+import skizlit.jcmods.common.item.ItemIngot;
 import skizlit.jcmods.common.item.armor.ArmorBaseJCMods;
 import skizlit.jcmods.common.item.tool.ToolAxe;
 import skizlit.jcmods.common.item.tool.ToolHoe;
@@ -68,8 +69,9 @@ public class JCModsItems {
 	public static final Item GEM_TANZANITE = new ItemBaseJCMods("gemTanzanite");
 	
 	// Ingots
-	public static final Item INGOT_NICKEL = new ItemBaseJCMods("ingotNickel");
-	public static final Item INGOT_RHODIUM = new ItemBaseJCMods("ingotRhodium");
+	public static final Item INGOT = new ItemIngot("Ingot");
+	//public static final Item INGOT_NICKEL = new ItemBaseJCMods("ingotNickel");
+	//public static final Item INGOT_RHODIUM = new ItemBaseJCMods("ingotRhodium");
 	
 	// Nugget
 	public static final Item NUGGET_NICKEL = new ItemBaseJCMods("nuggetNickel");
