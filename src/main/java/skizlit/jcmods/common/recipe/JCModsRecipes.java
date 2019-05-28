@@ -13,7 +13,7 @@ public class JCModsRecipes {
 		GameRegistry.addSmelting(JCModsBlocks.ORE_RHODIUM, new ItemStack(JCModsItems.INGOT, 1, 1), 1.0f);
 		
 		// Dust
-		GameRegistry.addSmelting(JCModsItems.DUST_NICKEL, new ItemStack(JCModsItems.INGOT, 1, 0), 0.7f);
-		GameRegistry.addSmelting(JCModsItems.DUST_RHODIUM, new ItemStack(JCModsItems.INGOT, 1, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(JCModsItems.DUST, 1, 0), new ItemStack(JCModsItems.INGOT, 1, 0), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(JCModsItems.DUST, 1, 1), new ItemStack(JCModsItems.INGOT, 1, 1), 1.0f);
 	}
 }

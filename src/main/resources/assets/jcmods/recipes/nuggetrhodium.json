@@ -6,7 +6,8 @@
     }  
     ],
     "result": {
-        "item": "jcmods:nuggetRhodium",
+        "item": "jcmods:Nugget",
+		"data": 1,
         "count": 9
     }
 }

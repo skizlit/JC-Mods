@@ -15,7 +15,11 @@ import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 import skizlit.jcmods.common.item.ItemBaseJCMods;
+import skizlit.jcmods.common.item.ItemDust;
+import skizlit.jcmods.common.item.ItemDustDirty;
+import skizlit.jcmods.common.item.ItemGem;
 import skizlit.jcmods.common.item.ItemIngot;
+import skizlit.jcmods.common.item.ItemNugget;
 import skizlit.jcmods.common.item.armor.ArmorBaseJCMods;
 import skizlit.jcmods.common.item.tool.ToolAxe;
 import skizlit.jcmods.common.item.tool.ToolHoe;
@@ -56,26 +60,14 @@ public class JCModsItems {
 	public static final Item TANZANITE_CHESTPLATE = new ArmorBaseJCMods("tanzaniteChestplate", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.CHEST);
 	public static final Item TANZANITE_BOOTS = new ArmorBaseJCMods("tanzaniteBoots", ARMOR_MATERIAL_TANZANITE, 1, EntityEquipmentSlot.FEET);
 	
-	// Dirty Dust
-	public static final Item DIRTY_DUST_NICKEL = new ItemBaseJCMods("dirtydustNickel");
-	public static final Item DIRTY_DUST_RHODIUM = new ItemBaseJCMods("dirtydustRhodium");
-	
-	// Dust
-	public static final Item DUST_NICKEL = new ItemBaseJCMods("dustNickel");
-	public static final Item DUST_RHODIUM = new ItemBaseJCMods("dustRhodium");
-	public static final Item DUST_TANZANITE = new ItemBaseJCMods("dustTanzanite");
-			
-	// Gem
-	public static final Item GEM_TANZANITE = new ItemBaseJCMods("gemTanzanite");
-	
-	// Ingots
+	/*
+	 * Multi Items
+	 */
+	public static final Item DUST = new ItemDust("Dust");
+	public static final Item DUST_DIRTY = new ItemDustDirty("DustDirty");
+	public static final Item GEM = new ItemGem("Gem");
 	public static final Item INGOT = new ItemIngot("Ingot");
-	//public static final Item INGOT_NICKEL = new ItemBaseJCMods("ingotNickel");
-	//public static final Item INGOT_RHODIUM = new ItemBaseJCMods("ingotRhodium");
-	
-	// Nugget
-	public static final Item NUGGET_NICKEL = new ItemBaseJCMods("nuggetNickel");
-	public static final Item NUGGET_RHODIUM = new ItemBaseJCMods("nuggetRhodium");
+	public static final Item NUGGET = new ItemNugget("Nugget");
 	
 	// Tools
 	public static final ItemAxe NICKEL_AXE = new ToolAxe("nickelAxe", TOOL_MATERIAL_NICKEL, 2.0F);

@@ -21,8 +21,8 @@ tile.blockTanzanite.name=Block of Tanzanite
 itemGroup.tabJCMods=JC Mods
 
 # Dirty Dust
-item.dirtydustNickel.name=Dirty Nickel Dust
-item.dirtydustRhodium.name=Dirty Rhodium Dust
+item.dustDirtyNickel.name=Dirty Nickel Dust
+item.dustDirtyRhodium.name=Dirty Rhodium Dust
 
 # Dust
 item.dustNickel.name=Nickel Dust

@@ -12,7 +12,8 @@
         }
     },   
     "result": {
-        "item": "jcmods:ingotRhodium",
+        "item": "jcmods:Ingot",
+		"data": 1,
         "count": 1
     }
 }

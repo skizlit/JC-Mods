@@ -9,7 +9,6 @@ import skizlit.jcmods.common.CommonProxy;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.common.util.IModelled;
 
 @SideOnly(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
@@ -24,9 +23,7 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void registerItemBlocksModels() {
 		for(Block block : JCModsBlocks.BLOCKS) {
-			if (block instanceof IModelled) {
-				((IModelled)block).registerModels();
-			}
+			JCModsRenderer.registerBlockRender(JCMods.MOD_ID, block);
 		}
 	}
 }

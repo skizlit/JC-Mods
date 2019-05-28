@@ -6,7 +6,8 @@
     }   
     ],
     "result": {
-        "item": "jcmods:nuggetNickel",
+        "item": "jcmods:Nugget",
+		"data": 0,
         "count": 9
     }
 }

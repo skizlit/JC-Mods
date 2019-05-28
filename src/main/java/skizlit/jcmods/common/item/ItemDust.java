@@ -6,18 +6,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import skizlit.jcmods.common.util.IMetaItem;
 
-public class ItemIngot extends ItemBaseJCMods implements IMetaItem {
+public class ItemDust extends ItemBaseJCMods implements IMetaItem {
 
-    public static String[] en_USNames = {"Nickel", "Rhodium"};
+    public static String[] en_USNames = {"Nickel", "Rhodium", "Tanzanite"};
 
-    public ItemIngot(String name) {
+    public ItemDust(String name) {
         super(name);
         setHasSubtypes(true);
     }
 
     @Override
     public String getTexture(int meta) {
-        return "ingot" + en_USNames[meta];
+        return "dust" + en_USNames[meta];
     }
 
     @Override
@@ -37,6 +37,6 @@ public class ItemIngot extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "ingot" + en_USNames[item.getItemDamage()];
+        return "item." + "dust" + en_USNames[item.getItemDamage()];
     }
 }
