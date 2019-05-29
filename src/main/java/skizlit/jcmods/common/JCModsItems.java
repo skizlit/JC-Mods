@@ -15,11 +15,14 @@ import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 import skizlit.jcmods.common.item.ItemBaseJCMods;
+import skizlit.jcmods.common.item.ItemClump;
+import skizlit.jcmods.common.item.ItemCrystal;
 import skizlit.jcmods.common.item.ItemDust;
 import skizlit.jcmods.common.item.ItemDustDirty;
 import skizlit.jcmods.common.item.ItemGem;
 import skizlit.jcmods.common.item.ItemIngot;
 import skizlit.jcmods.common.item.ItemNugget;
+import skizlit.jcmods.common.item.ItemShard;
 import skizlit.jcmods.common.item.armor.ArmorBaseJCMods;
 import skizlit.jcmods.common.item.tool.ToolAxe;
 import skizlit.jcmods.common.item.tool.ToolHoe;
@@ -63,11 +66,14 @@ public class JCModsItems {
 	/*
 	 * Multi Items
 	 */
+	public static final Item CLUMP = new ItemClump("Clump");
+	public static final Item CRYSTAL = new ItemCrystal("Crystal");
 	public static final Item DUST = new ItemDust("Dust");
 	public static final Item DUST_DIRTY = new ItemDustDirty("DustDirty");
 	public static final Item GEM = new ItemGem("Gem");
 	public static final Item INGOT = new ItemIngot("Ingot");
 	public static final Item NUGGET = new ItemNugget("Nugget");
+	public static final Item SHARD = new ItemShard("Shard");
 	
 	// Tools
 	public static final ItemAxe NICKEL_AXE = new ToolAxe("nickelAxe", TOOL_MATERIAL_NICKEL, 2.0F);

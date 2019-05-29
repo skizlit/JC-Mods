@@ -1,4 +1,4 @@
-# Armor
+# Armors
 item.nickelBoots.name=Nickel Boots
 item.nickelChestplate.name=Nickel Chestplate
 item.nickelHelmet.name=Nickel Helmet
@@ -17,14 +17,22 @@ tile.blockNickel.name=Block of Nickel
 tile.blockRhodium.name=Block of Rhodium
 tile.blockTanzanite.name=Block of Tanzanite
 
+# Clumps
+item.clumpNickel.name=Nickel Clump
+item.clumpRhodium.name=Rhodium Clump
+
+# Crystals
+item.crystalNickel.name=Nickel Crystal
+item.crystalRhodium.name=Rhodium Crystal
+
 # Creative tab
 itemGroup.tabJCMods=JC Mods
 
-# Dirty Dust
+# Dirty Dusts
 item.dustDirtyNickel.name=Dirty Nickel Dust
 item.dustDirtyRhodium.name=Dirty Rhodium Dust
 
-# Dust
+# Dusts
 item.dustNickel.name=Nickel Dust
 item.dustRhodium.name=Rhodium Dust
 item.dustTanzanite.name=Tanzanite Dust
@@ -44,6 +52,10 @@ item.nuggetRhodium.name=Rhodium Nugget
 tile.oreNickel.name=Nickel Ore
 tile.oreRhodium.name=Rhodium Ore
 tile.oreTanzanite.name=Tanzanite Ore
+
+# Shards
+item.shardNickel.name=Nickel Shard
+item.shardRhodium.name=Rhodium Shard
 
 # Tools
 item.nickelAxe.name=Nickel Axe

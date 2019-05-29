@@ -1,4 +1,4 @@
-package skizlit.jcmods.common.util;
+package skizlit.jcmods.common.util.interfaces;
 
 public interface IMetaItem {
 

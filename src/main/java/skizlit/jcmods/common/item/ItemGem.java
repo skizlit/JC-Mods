@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import skizlit.jcmods.common.util.IMetaItem;
+import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemGem extends ItemBaseJCMods implements IMetaItem {
 
