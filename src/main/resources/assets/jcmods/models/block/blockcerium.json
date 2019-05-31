@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "JCMods:blocks/blockCerium"
+       "all": "jcmods:blocks/blockCerium"
    }
 }

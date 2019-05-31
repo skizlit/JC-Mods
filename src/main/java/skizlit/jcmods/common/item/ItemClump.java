@@ -1,10 +1,11 @@
 package skizlit.jcmods.common.item;
 
 import javax.annotation.Nonnull;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import skizlit.jcmods.common.util.Refrences;
+import skizlit.jcmods.common.JCModsItems;
 import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemClump extends ItemBaseJCMods implements IMetaItem {
@@ -16,18 +17,18 @@ public class ItemClump extends ItemBaseJCMods implements IMetaItem {
 
     @Override
     public String getTexture(int meta) {
-        return "clump" + Refrences.coreTypes[meta];
+        return "clump" + JCModsItems.coreTypes[meta];
     }
 
     @Override
     public int getVariants() {
-        return Refrences.coreTypes.length;
+        return JCModsItems.coreTypes.length;
     }
 
     @Override
     public void getSubItems(@Nonnull CreativeTabs tabs, @Nonnull NonNullList<ItemStack> itemList) {
         if (isInCreativeTab(tabs)) {
-            for (int counter = 0; counter < Refrences.coreTypes.length; counter++) {
+            for (int counter = 0; counter < JCModsItems.coreTypes.length; counter++) {
                 itemList.add(new ItemStack(this, 1, counter));
             }
         }
@@ -36,6 +37,6 @@ public class ItemClump extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "clump" + Refrences.coreTypes[item.getItemDamage()];
+        return "item." + "clump" + JCModsItems.coreTypes[item.getItemDamage()];
     }
 }

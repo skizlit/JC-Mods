@@ -1,10 +1,11 @@
 package skizlit.jcmods.common.item;
 
 import javax.annotation.Nonnull;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import skizlit.jcmods.common.util.Refrences;
+import skizlit.jcmods.common.JCModsItems;
 import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemGem extends ItemBaseJCMods implements IMetaItem {
@@ -16,18 +17,18 @@ public class ItemGem extends ItemBaseJCMods implements IMetaItem {
 
     @Override
     public String getTexture(int meta) {
-        return "gem" + Refrences.gemTypes[meta];
+        return "gem" + JCModsItems.gemTypes[meta];
     }
 
     @Override
     public int getVariants() {
-        return Refrences.gemTypes.length;
+        return JCModsItems.gemTypes.length;
     }
 
     @Override
     public void getSubItems(@Nonnull CreativeTabs tabs, @Nonnull NonNullList<ItemStack> itemList) {
         if (isInCreativeTab(tabs)) {
-            for (int counter = 0; counter < Refrences.gemTypes.length; counter++) {
+            for (int counter = 0; counter < JCModsItems.gemTypes.length; counter++) {
                 itemList.add(new ItemStack(this, 1, counter));
             }
         }
@@ -36,6 +37,6 @@ public class ItemGem extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "gem" + Refrences.gemTypes[item.getItemDamage()];
+        return "item." + "gem" + JCModsItems.gemTypes[item.getItemDamage()];
     }
 }

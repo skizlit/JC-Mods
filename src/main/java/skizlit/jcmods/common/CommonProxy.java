@@ -1,7 +1,6 @@
 package skizlit.jcmods.common;
 
 import net.minecraft.item.Item;
-import skizlit.jcmods.common.util.Refrences;
 
 public class CommonProxy {
 		
@@ -11,7 +10,7 @@ public class CommonProxy {
 	
 	public void updateBlockStats() {
 		//Set Harvest Levels
-		Refrences.BLOCK_CERIUM.setHarvestLevel("pickaxe", 1);
-		Refrences.ORE_CERIUM.setHarvestLevel("pickaxe", 1);
+		JCModsBlocks.BLOCK_CERIUM.setHarvestLevel("pickaxe", 1);
+		JCModsBlocks.ORE_CERIUM.setHarvestLevel("pickaxe", 1);
 	}	
 }

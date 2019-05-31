@@ -12,7 +12,7 @@ import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import skizlit.jcmods.common.util.Refrences;
+import skizlit.jcmods.common.JCModsBlocks;
 
 public class JCModsWorldGen implements IWorldGenerator{
 	
@@ -21,17 +21,17 @@ public class JCModsWorldGen implements IWorldGenerator{
 	private WorldGenerator ore_Tanzanite, ore_End_Tanzanite, ore_Nether_Tanzanite;
 	
 	public JCModsWorldGen() {
-		ore_Cerium = new WorldGenMinable(Refrences.ORE_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Cerium = new WorldGenMinable(Refrences.ORE_END_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Cerium = new WorldGenMinable(Refrences.ORE_NETHER_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Cerium = new WorldGenMinable(JCModsBlocks.ORE_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Cerium = new WorldGenMinable(JCModsBlocks.ORE_END_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Cerium = new WorldGenMinable(JCModsBlocks.ORE_NETHER_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		
-		ore_Rhodium = new WorldGenMinable((IBlockState) Refrences.ORE_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Rhodium = new WorldGenMinable((IBlockState) Refrences.ORE_END_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Rhodium = new WorldGenMinable((IBlockState) Refrences.ORE_NETHER_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		
-		ore_Tanzanite = new WorldGenMinable((IBlockState) Refrences.ORE_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Tanzanite = new WorldGenMinable((IBlockState) Refrences.ORE_END_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Tanzanite = new WorldGenMinable((IBlockState) Refrences.ORE_NETHER_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 	
 	@Override
