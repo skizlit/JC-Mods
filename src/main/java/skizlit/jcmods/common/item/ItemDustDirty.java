@@ -4,11 +4,10 @@ import javax.annotation.Nonnull;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import skizlit.jcmods.common.util.Refrences;
 import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemDustDirty extends ItemBaseJCMods implements IMetaItem {
-
-    public static String[] en_USNames = {"Nickel", "Rhodium"};
 
     public ItemDustDirty(String name) {
         super(name);
@@ -17,18 +16,18 @@ public class ItemDustDirty extends ItemBaseJCMods implements IMetaItem {
 
     @Override
     public String getTexture(int meta) {
-        return "dustDirty" + en_USNames[meta];
+        return "dustDirty" + Refrences.coreTypes[meta];
     }
 
     @Override
     public int getVariants() {
-        return en_USNames.length;
+        return Refrences.coreTypes.length;
     }
 
     @Override
     public void getSubItems(@Nonnull CreativeTabs tabs, @Nonnull NonNullList<ItemStack> itemList) {
         if (isInCreativeTab(tabs)) {
-            for (int counter = 0; counter < en_USNames.length; counter++) {
+            for (int counter = 0; counter < Refrences.coreTypes.length; counter++) {
                 itemList.add(new ItemStack(this, 1, counter));
             }
         }
@@ -37,6 +36,6 @@ public class ItemDustDirty extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "dustDirty" + en_USNames[item.getItemDamage()];
+        return "item." + "dustDirty" + Refrences.coreTypes[item.getItemDamage()];
     }
 }

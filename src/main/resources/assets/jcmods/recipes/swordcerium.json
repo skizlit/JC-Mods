@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "A",
+        "A",
+        "B"
+    ],
+    "key": {
+        "A": {
+            "item": "#INGOT_CERIUM"
+        },
+        "B": {
+            "item": "#STICK_WOOD"
+        }
+    },
+    "result": {
+        "item": "jcmods:ceriumSword",
+        "count": 1
+    }
+}

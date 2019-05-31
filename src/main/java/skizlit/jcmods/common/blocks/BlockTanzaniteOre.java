@@ -8,17 +8,23 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import skizlit.jcmods.common.JCModsItems;
+import skizlit.jcmods.common.util.interfaces.IMetaBlock;
 
-public class BlockTanzaniteOre extends BlockBaseJCMods{
+public class BlockTanzaniteOre extends BlockBaseJCMods implements IMetaBlock {
 	
 	protected Item bDroppedItem;
 	
 	public BlockTanzaniteOre(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.STONE);
-		setHardness(this.getOreBlockHardness());
-		setResistance(this.getOreBlockResistance());
-		setHarvestLevel("pickaxe", this.getOreBlockHarvestLevel());
+		setHardness(this.getBlockResistance());
+		setResistance(this.getBlockHardness());
+		setHarvestLevel("pickaxe", this.getBlockHarvestLevel());
+	}
+	
+	@Override
+	public String getTexture() {
+		return this.getTranslationKey();
 	}
 	
 	@Override
@@ -27,15 +33,18 @@ public class BlockTanzaniteOre extends BlockBaseJCMods{
 		return new ItemStack(JCModsItems.GEM, 1, 0).getItem();
     }
 	
-	public float getOreBlockResistance() {
+	@Override
+	public float getBlockResistance() {
 		return 15;
 	}
 	
-	public float getOreBlockHardness() {
+	@Override
+	public float getBlockHardness() {
 		return 3;
 	}
 	
-	public int getOreBlockHarvestLevel() {
+	@Override
+	public int getBlockHarvestLevel() {
 		return 2;
 	}
 }

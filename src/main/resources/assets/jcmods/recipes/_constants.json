@@ -7,10 +7,10 @@
     	}
   	},
   	{
-    "name": "INGOT_NICKEL",
+    "name": "INGOT_CERIUM",
     	"ingredient": {
       		"type": "forge:ore_dict",
-      		"ore": "ingotNickel"
+      		"ore": "ingotCerium"
     	}
   	},
   	{

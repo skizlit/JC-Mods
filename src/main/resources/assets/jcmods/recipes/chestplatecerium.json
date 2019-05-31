@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "A A",
+        "AAA",
+        "AAA"
+    ], 
+    "key": {
+        "A": {
+            "item": "#INGOT_CERIUM"
+        }
+    }, 
+    "result": {
+        "item": "jcmods:ceriumChestplate",
+        "count": 1
+    }
+}

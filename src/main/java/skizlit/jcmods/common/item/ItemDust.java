@@ -4,11 +4,10 @@ import javax.annotation.Nonnull;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import skizlit.jcmods.common.util.Refrences;
 import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemDust extends ItemBaseJCMods implements IMetaItem {
-
-    public static String[] en_USNames = {"Nickel", "Rhodium", "Tanzanite"};
 
     public ItemDust(String name) {
         super(name);
@@ -17,18 +16,18 @@ public class ItemDust extends ItemBaseJCMods implements IMetaItem {
 
     @Override
     public String getTexture(int meta) {
-        return "dust" + en_USNames[meta];
+        return "dust" + Refrences.dustTypes[meta];
     }
 
     @Override
     public int getVariants() {
-        return en_USNames.length;
+        return Refrences.dustTypes.length;
     }
 
     @Override
     public void getSubItems(@Nonnull CreativeTabs tabs, @Nonnull NonNullList<ItemStack> itemList) {
         if (isInCreativeTab(tabs)) {
-            for (int counter = 0; counter < en_USNames.length; counter++) {
+            for (int counter = 0; counter < Refrences.dustTypes.length; counter++) {
                 itemList.add(new ItemStack(this, 1, counter));
             }
         }
@@ -37,6 +36,6 @@ public class ItemDust extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "dust" + en_USNames[item.getItemDamage()];
+        return "item." + "dust" + Refrences.dustTypes[item.getItemDamage()];
     }
 }

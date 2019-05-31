@@ -4,11 +4,10 @@ import javax.annotation.Nonnull;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import skizlit.jcmods.common.util.Refrences;
 import skizlit.jcmods.common.util.interfaces.IMetaItem;
 
 public class ItemNugget extends ItemBaseJCMods implements IMetaItem {
-
-    public static String[] en_USNames = {"Nickel", "Rhodium"};
 
     public ItemNugget(String name) {
         super(name);
@@ -17,18 +16,18 @@ public class ItemNugget extends ItemBaseJCMods implements IMetaItem {
 
     @Override
     public String getTexture(int meta) {
-        return "nugget" + en_USNames[meta];
+        return "nugget" + Refrences.coreTypes[meta];
     }
 
     @Override
     public int getVariants() {
-        return en_USNames.length;
+        return Refrences.coreTypes.length;
     }
 
     @Override
     public void getSubItems(@Nonnull CreativeTabs tabs, @Nonnull NonNullList<ItemStack> itemList) {
         if (isInCreativeTab(tabs)) {
-            for (int counter = 0; counter < en_USNames.length; counter++) {
+            for (int counter = 0; counter < Refrences.coreTypes.length; counter++) {
                 itemList.add(new ItemStack(this, 1, counter));
             }
         }
@@ -37,6 +36,6 @@ public class ItemNugget extends ItemBaseJCMods implements IMetaItem {
     @Nonnull
     @Override
     public String getTranslationKey(ItemStack item) {
-        return "item." + "nugget" + en_USNames[item.getItemDamage()];
+        return "item." + "nugget" + Refrences.coreTypes[item.getItemDamage()];
     }
 }

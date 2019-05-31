@@ -3,6 +3,7 @@ package skizlit.jcmods.common;
 import javax.annotation.Nonnull;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import skizlit.jcmods.common.util.Refrences;
 
 public class CreativeTabJCMods extends CreativeTabs {
 
@@ -13,6 +14,6 @@ public class CreativeTabJCMods extends CreativeTabs {
     @Nonnull
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(JCModsItems.GEM, 1, 0);
+        return new ItemStack(Refrences.GEM_TANZANITE);
     }
 }

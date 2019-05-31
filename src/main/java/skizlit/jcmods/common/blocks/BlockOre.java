@@ -2,26 +2,35 @@ package skizlit.jcmods.common.blocks;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import skizlit.jcmods.common.util.interfaces.IMetaBlock;
 
-public class BlockOre extends BlockBaseJCMods{
+public class BlockOre extends BlockBaseJCMods implements IMetaBlock{
 	
 	public BlockOre(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.STONE);
-		setHardness(this.getOreBlockHardness());
-		setResistance(this.getOreBlockResistance());
-		setHarvestLevel("pickaxe", this.getOreBlockHarvestLevel());
+		setHardness(this.getBlockResistance());
+		setResistance(this.getBlockHardness());
+		setHarvestLevel("pickaxe", this.getBlockHarvestLevel());
 	}
-			
-	public float getOreBlockResistance() {
+	
+	@Override
+	public String getTexture() {
+		return this.getTranslationKey();
+	}
+	
+	@Override
+	public float getBlockResistance() {
 		return 15;
 	}
 	
-	public float getOreBlockHardness() {
+	@Override
+	public float getBlockHardness() {
 		return 3;
 	}
 	
-	public int getOreBlockHarvestLevel() {
+	@Override
+	public int getBlockHarvestLevel() {
 		return 2;
 	}
 }

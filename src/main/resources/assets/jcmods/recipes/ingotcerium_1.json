@@ -1,0 +1,14 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+    {
+    	"type": "forge:ore_dict",
+      	"ore": "blockCerium"
+    }   
+    ],
+    "result": {
+        "item": "jcmods:Ingot",
+		"data": 0,
+        "count": 9
+    }
+}

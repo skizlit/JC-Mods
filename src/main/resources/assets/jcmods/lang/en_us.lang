@@ -1,8 +1,8 @@
 # Armors
-item.nickelBoots.name=Nickel Boots
-item.nickelChestplate.name=Nickel Chestplate
-item.nickelHelmet.name=Nickel Helmet
-item.nickelLeggings.name=Nickel Leggings
+item.ceriumBoots.name=Cerium Boots
+item.ceriumChestplate.name=Cerium Chestplate
+item.ceriumHelmet.name=Cerium Helmet
+item.ceriumLeggings.name=Cerium Leggings
 item.rhodiumBoots.name=Rhodium Boots
 item.rhodiumChestplate.name=Rhodium Chestplate
 item.rhodiumHelmet.name=Rhodium Helmet
@@ -13,27 +13,27 @@ item.tanzaniteHelmet.name=Tanzanite Helmet
 item.tanzaniteLeggings.name=Tanzanite Leggings
 
 # Blocks
-tile.blockNickel.name=Block of Nickel
+tile.blockCerium.name=Block of Cerium
 tile.blockRhodium.name=Block of Rhodium
 tile.blockTanzanite.name=Block of Tanzanite
 
 # Clumps
-item.clumpNickel.name=Nickel Clump
+item.clumpCerium.name=Cerium Clump
 item.clumpRhodium.name=Rhodium Clump
 
 # Crystals
-item.crystalNickel.name=Nickel Crystal
+item.crystalCerium.name=Cerium Crystal
 item.crystalRhodium.name=Rhodium Crystal
 
 # Creative tab
 itemGroup.tabJCMods=JC Mods
 
 # Dirty Dusts
-item.dustDirtyNickel.name=Dirty Nickel Dust
+item.dustDirtyCerium.name=Dirty Cerium Dust
 item.dustDirtyRhodium.name=Dirty Rhodium Dust
 
 # Dusts
-item.dustNickel.name=Nickel Dust
+item.dustCerium.name=Cerium Dust
 item.dustRhodium.name=Rhodium Dust
 item.dustTanzanite.name=Tanzanite Dust
 
@@ -41,28 +41,34 @@ item.dustTanzanite.name=Tanzanite Dust
 item.gemTanzanite.name=Tanzanite
 
 # Ingots
-item.ingotNickel.name=Nickel Ingot
+item.ingotCerium.name=Cerium Ingot
 item.ingotRhodium.name=Rhodium Ingot
 
 # Nuggets
-item.nuggetNickel.name=Nickel Nugget
+item.nuggetCerium.name=Cerium Nugget
 item.nuggetRhodium.name=Rhodium Nugget
 
 # Ores
-tile.oreNickel.name=Nickel Ore
+tile.oreCerium.name=Cerium Ore
 tile.oreRhodium.name=Rhodium Ore
 tile.oreTanzanite.name=Tanzanite Ore
+tile.oreEndCerium.name=End Cerium Ore
+tile.oreEndRhodium.name=End Rhodium Ore
+tile.oreEndTanzanite.name=End Tanzanite Ore
+tile.oreNetherCerium.name=Nether Cerium Ore
+tile.oreNetherRhodium.name=Nether Rhodium Ore
+tile.oreNetherTanzanite.name=Nether Tanzanite Ore
 
 # Shards
-item.shardNickel.name=Nickel Shard
+item.shardCerium.name=Cerium Shard
 item.shardRhodium.name=Rhodium Shard
 
 # Tools
-item.nickelAxe.name=Nickel Axe
-item.nickelHoe.name=Nickel Hoe
-item.nickelPickaxe.name=Nickel Pickaxe
-item.nickelShovel.name=Nickel Shovel
-item.nickelSword.name=Nickel Sword
+item.ceriumAxe.name=Cerium Axe
+item.ceriumHoe.name=Cerium Hoe
+item.ceriumPickaxe.name=Cerium Pickaxe
+item.ceriumShovel.name=Cerium Shovel
+item.ceriumSword.name=Cerium Sword
 item.rhodiumAxe.name=Rhodium Axe
 item.rhodiumHoe.name=Rhodium Hoe
 item.rhodiumPickaxe.name=Rhodium Pickaxe
