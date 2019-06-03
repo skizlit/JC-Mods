@@ -26,7 +26,7 @@ public class BlockBasic extends BlockBaseJCMods implements IMetaBlock {
 	
 	@Override
 	public float getBlockHardness() {
-		return 5;
+		return 3;
 	}
 	
 	@Override
