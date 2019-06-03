@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",  
+    "pattern": [
+        "AA",
+        "A A"
+    ], 
+    "key": {
+        "A":
+        {
+    		"item": "#INGOT_CERIUM"
+        }
+    },   
+    "result": {
+        "item": "minecraft:iron_ingot",
+        "count": 4
+    }
+}

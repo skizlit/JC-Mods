@@ -21,6 +21,13 @@
     	}
   	},
   	{
+    "name": "INGOT_IRON",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "ingotIron"
+   		}
+  	},
+  	{
     "name": "GEM_TANZANITE",
     	"ingredient": {
       		"type": "forge:ore_dict",
