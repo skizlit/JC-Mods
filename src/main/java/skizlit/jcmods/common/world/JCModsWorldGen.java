@@ -21,17 +21,17 @@ public class JCModsWorldGen implements IWorldGenerator{
 	private WorldGenerator ore_Tanzanite, ore_End_Tanzanite, ore_Nether_Tanzanite;
 	
 	public JCModsWorldGen() {
-		ore_Cerium = new WorldGenMinable(JCModsBlocks.ORE_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Cerium = new WorldGenMinable(JCModsBlocks.ORE_END_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Cerium = new WorldGenMinable(JCModsBlocks.ORE_NETHER_CERIUM.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Cerium = new WorldGenMinable(JCModsBlocks.ORE_CERIUM.getDefaultState(), 16, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Cerium = new WorldGenMinable(JCModsBlocks.ORE_END_CERIUM.getDefaultState(), 16, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Cerium = new WorldGenMinable(JCModsBlocks.ORE_NETHER_CERIUM.getDefaultState(), 16, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		
-		ore_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_RHODIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_RHODIUM.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_RHODIUM.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Rhodium = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_RHODIUM.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		
-		ore_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.STONE));
-		ore_End_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_Nether_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_TANZANITE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_TANZANITE.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.STONE));
+		ore_End_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_END_TANZANITE.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_Nether_Tanzanite = new WorldGenMinable((IBlockState) JCModsBlocks.ORE_NETHER_TANZANITE.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 	
 	@Override
@@ -39,18 +39,18 @@ public class JCModsWorldGen implements IWorldGenerator{
 		switch (world.provider.getDimension()) {
 		case -1:
 			runGenerator(ore_Nether_Cerium, world, rand, chunkX, chunkZ, 16, 0, 256);
-			runGenerator(ore_Nether_Rhodium, world, rand, chunkX, chunkZ, 7, 0, 40);
-			runGenerator(ore_Nether_Tanzanite, world, rand, chunkX, chunkZ, 8, 0, 50);
+			runGenerator(ore_Nether_Rhodium, world, rand, chunkX, chunkZ, 8, 0, 40);
+			runGenerator(ore_Nether_Tanzanite, world, rand, chunkX, chunkZ, 10, 0, 50);
 			break;
 		case 0:
 			runGenerator(ore_Cerium, world, rand, chunkX, chunkZ, 16, 0, 125);
-			runGenerator(ore_Rhodium, world, rand, chunkX, chunkZ, 7, 0, 16);
-			runGenerator(ore_Tanzanite, world, rand, chunkX, chunkZ, 8, 0, 20);
+			runGenerator(ore_Rhodium, world, rand, chunkX, chunkZ, 8, 0, 16);
+			runGenerator(ore_Tanzanite, world, rand, chunkX, chunkZ, 10, 0, 20);
 			break;
 		case 1:
 			runGenerator(ore_End_Cerium, world, rand, chunkX, chunkZ, 16, 0, 256);
-			runGenerator(ore_End_Rhodium, world, rand, chunkX, chunkZ, 7, 0, 256);
-			runGenerator(ore_End_Tanzanite, world, rand, chunkX, chunkZ, 8, 0, 256);
+			runGenerator(ore_End_Rhodium, world, rand, chunkX, chunkZ, 8, 0, 256);
+			runGenerator(ore_End_Tanzanite, world, rand, chunkX, chunkZ, 10, 0, 256);
 			break;
 		}
 		
