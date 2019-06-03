@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",  
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ], 
+    "key": {
+        "A":
+        {
+    		"type": "forge:ore_dict",
+      		"ore": "nuggetCerium"
+        }
+    },   
+    "result": {
+        "item": "jcmods:Ingot",
+		"data": 0,
+        "count": 1
+    }
+}

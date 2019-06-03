@@ -7,10 +7,10 @@
     	}
   	},
   	{
-    "name": "INGOT_NICKEL",
+    "name": "INGOT_CERIUM",
     	"ingredient": {
       		"type": "forge:ore_dict",
-      		"ore": "ingotNickel"
+      		"ore": "ingotCerium"
     	}
   	},
   	{
@@ -21,10 +21,24 @@
     	}
   	},
   	{
+    "name": "INGOT_IRON",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "ingotIron"
+   		}
+  	},
+  	{
     "name": "GEM_TANZANITE",
     	"ingredient": {
       		"type": "forge:ore_dict",
       		"ore": "gemTanzanite"
+    	}
+  	},
+  	{
+    "name": "GEM_DIAMOND",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "gemDiamond"
     	}
   	}
 ]

@@ -1,0 +1,13 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [ 
+    {
+      "item": "#INGOT_CERIUM"
+    }   
+    ],
+    "result": {
+        "item": "jcmods:nugget",
+		"data": 0,
+        "count": 9
+    }
+}

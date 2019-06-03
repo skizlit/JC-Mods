@@ -10,9 +10,8 @@ import net.minecraft.item.ItemBlock;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.common.util.IModelled;
 
-public class BlockBaseJCMods extends Block implements IModelled{
+public class BlockBaseJCMods extends Block {
 
 	public BlockBaseJCMods(String name, Material material) {
 		super(material);
@@ -22,11 +21,6 @@ public class BlockBaseJCMods extends Block implements IModelled{
         
         JCModsBlocks.BLOCKS.add(this);
         JCModsItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-	}
-
-	@Override
-	public void registerModels() {
-		JCMods.proxy.registerItem(Item.getItemFromBlock(this), 0, "Inventory");
 	}
 	
 	@Override
