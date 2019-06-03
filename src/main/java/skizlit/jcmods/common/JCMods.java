@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import skizlit.jcmods.common.intergration.JCModsHooks;
 import skizlit.jcmods.common.intergration.OreDictionaryRegistery;
 import skizlit.jcmods.common.recipe.JCModsRecipes;
 import skizlit.jcmods.common.world.JCModsWorldGen;
@@ -49,8 +50,12 @@ public class JCMods
     /**
      * JC Mods creative tab
      */
-    public static CreativeTabJCMods tabJCMods = new CreativeTabJCMods();
-    
+    public static CreativeTabJCMods tabJCMods = new CreativeTabJCMods();   
+    /**
+     * JC Mods hooks instance
+     */
+    public static JCModsHooks hooks = new JCModsHooks();
+   
     @EventHandler
     public void init(FMLPreInitializationEvent event)
     {

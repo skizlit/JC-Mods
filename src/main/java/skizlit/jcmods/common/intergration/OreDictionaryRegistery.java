@@ -44,8 +44,8 @@ public class OreDictionaryRegistery {
 		OreDictionary.registerOre("oreCerium", new ItemStack(JCModsBlocks.ORE_NETHER_CERIUM));
 		
 		OreDictionary.registerOre("oreRhodium", new ItemStack(JCModsBlocks.ORE_RHODIUM));
-		//OreDictionary.registerOre("oreRhodium", new ItemStack(Refrences.ORE_END_RHODIUM));
-		//OreDictionary.registerOre("oreRhodium", new ItemStack(Refrences.ORE_NETHER_RHODIUM));
+		OreDictionary.registerOre("oreRhodium", new ItemStack(JCModsBlocks.ORE_END_RHODIUM));
+		OreDictionary.registerOre("oreRhodium", new ItemStack(JCModsBlocks.ORE_NETHER_RHODIUM));
 		
 		OreDictionary.registerOre("oreTanzanite", new ItemStack(JCModsBlocks.ORE_TANZANITE));
 		OreDictionary.registerOre("oreTanzanite", new ItemStack(JCModsBlocks.ORE_END_TANZANITE));

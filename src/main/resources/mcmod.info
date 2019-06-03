@@ -10,7 +10,7 @@
   "authorList": ["Skizlit"],
   "credits": "Skizlit",
   "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+  "useDependencyInformation": true,
+  "dependencies": ["mekanism"]
 }
 ]

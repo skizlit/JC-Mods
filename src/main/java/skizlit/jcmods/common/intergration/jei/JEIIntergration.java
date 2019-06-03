@@ -1,4 +1,4 @@
-package skizlit.jcmods.common.intergration;
+package skizlit.jcmods.common.intergration.jei;
 
 import java.util.IllegalFormatException;
 
@@ -12,7 +12,7 @@ import net.minecraft.util.text.translation.I18n;
 
 @SuppressWarnings("deprecation")
 @JEIPlugin
-public class JEICompat implements IModPlugin {
+public class JEIIntergration implements IModPlugin {
 	
 	@Override
 	public void registerCategories(IRecipeCategoryRegistration registry) {

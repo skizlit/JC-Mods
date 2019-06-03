@@ -12,5 +12,7 @@ public class CommonProxy {
 		//Set Harvest Levels
 		JCModsBlocks.BLOCK_CERIUM.setHarvestLevel("pickaxe", 1);
 		JCModsBlocks.ORE_CERIUM.setHarvestLevel("pickaxe", 1);
+		JCModsBlocks.ORE_END_CERIUM.setHarvestLevel("pickaxe", 1);
+		JCModsBlocks.ORE_NETHER_CERIUM.setHarvestLevel("pickaxe", 1);
 	}	
 }
