@@ -1,7 +1,7 @@
 {
     "type": "forge:ore_shaped",  
     "pattern": [
-        "AA",
+        "AA ",
         "A A"
     ], 
     "key": {

@@ -33,5 +33,12 @@
       		"type": "forge:ore_dict",
       		"ore": "gemTanzanite"
     	}
+  	},
+  	{
+    "name": "GEM_DIAMOND",
+    	"ingredient": {
+      		"type": "forge:ore_dict",
+      		"ore": "gemDiamond"
+    	}
   	}
 ]

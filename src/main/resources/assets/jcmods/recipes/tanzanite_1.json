@@ -7,11 +7,12 @@
     "key": {
         "A":
         {
-    		"item": "#INGOT_CERIUM"
+    		"item": "#GEM_DIAMOND"
         }
     },   
     "result": {
-        "item": "minecraft:iron_ingot",
+        "item": "jcmods:Gem",
+		"data": 0,
         "count": 4
     }
 }
