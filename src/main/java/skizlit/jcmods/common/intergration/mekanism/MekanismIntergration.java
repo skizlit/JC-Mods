@@ -2,11 +2,11 @@ package skizlit.jcmods.common.intergration.mekanism;
 
 import mekanism.api.MekanismAPI;
 import mekanism.api.MekanismRecipeHelper;
+import mekanism.api.gas.GasRegistry;
 import net.minecraft.item.ItemStack;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
-import skizlit.jcmods.common.intergration.JCModsHooks;
 
 public class MekanismIntergration {
 
@@ -42,25 +42,20 @@ public class MekanismIntergration {
 	
 	public void chemicalInjectionChamberRecipes() {
 		try {
-			/*
-		 	* Dust Dirty
-		 	*/
-			helper.addPurificationChamberRecipe(new ItemStack(JCModsItems.SHARD, 1, 0), new ItemStack(JCModsItems.CLUMP, 1, 0));
-			helper.addPurificationChamberRecipe(new ItemStack(JCModsItems.SHARD, 1, 1), new ItemStack(JCModsItems.CLUMP, 1, 1));
 						
 			/*
 			 * Ores
 			 */
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_CERIUM), JCModsHooks.MEKANISM_MOD_ID.Gas, new ItemStack(JCModsItems.CLUMP, 4, 0));
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_END_CERIUM), new ItemStack(JCModsItems.CLUMP, 4, 0));
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_NETHER_CERIUM), new ItemStack(JCModsItems.CLUMP, 4, 0));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_CERIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 0));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_END_CERIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 0));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_NETHER_CERIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 0));
 			
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_RHODIUM), new ItemStack(JCModsItems.CLUMP, 4, 1));
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_END_RHODIUM), new ItemStack(JCModsItems.CLUMP, 4, 1));
-			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_NETHER_RHODIUM), new ItemStack(JCModsItems.CLUMP, 4, 1));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_RHODIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 1));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_END_RHODIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 1));
+			helper.addChemicalInjectionChamberRecipe(new ItemStack(JCModsBlocks.ORE_NETHER_RHODIUM), GasRegistry.getGas("hydrogenchloride"), new ItemStack(JCModsItems.CLUMP, 4, 1));
 		}
 		catch(Exception e) {
-			JCMods.logger.info("Mekanism: Crusher - Failed");
+			JCMods.logger.info("Chemical Injection Chamber: Crusher - Failed");
 		}
 	}
 	

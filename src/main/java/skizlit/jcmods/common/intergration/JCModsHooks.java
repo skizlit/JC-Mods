@@ -37,8 +37,9 @@ public class JCModsHooks {
     @Optional.Method(modid = MEKANISM_MOD_ID)
     private static void mekanismHooks() {
     	MekanismIntergration mekanismHook = new MekanismIntergration();
+    	//mekanismHook.chemicalInjectionChamberRecipes();
     	mekanismHook.crusherRecipes();
-    	mekanismHook.enrichmentChamberRecipes();
-    	mekanismHook.purificationChamberRecipes();
+    	//mekanismHook.enrichmentChamberRecipes();
+    	//mekanismHook.purificationChamberRecipes();
     }
 }

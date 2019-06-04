@@ -57,21 +57,25 @@ public class JCMods
     public static JCModsHooks hooks = new JCModsHooks();
    
     @EventHandler
-    public void init(FMLPreInitializationEvent event)
+    public void preInit(FMLPreInitializationEvent event)
     {
     	GameRegistry.registerWorldGenerator(new JCModsWorldGen(), 3);
+    	
+    	hooks.hookPreInit();
     }
     
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
     	JCModsRecipes.init();
+    	
+    	hooks.hookInit();
     }
     
     @EventHandler
-    public void init(FMLPostInitializationEvent event)
+    public void postInit(FMLPostInitializationEvent event)
     {
-    	
+    	hooks.hookPostInit();
     }
     
     @SubscribeEvent
