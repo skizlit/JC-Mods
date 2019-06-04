@@ -1,0 +1,12 @@
+{
+	"parent": "block/orientable",
+	"textures": {
+	"particle": "jcmods:blocks/cobblegenerator",
+	"up": "jcmods:blocks/cobblegenerator_side",
+	"down": "jcmods:blocks/cobblegenerator_side",
+	"north": "jcmods:blocks/cobblegenerator_on",
+	"east": "jcmods:blocks/cobblegenerator_side",
+	"south": "jcmods:blocks/cobblegenerator_side",
+	"west": "jcmods:blocks/cobblegenerator_side"
+	}
+}

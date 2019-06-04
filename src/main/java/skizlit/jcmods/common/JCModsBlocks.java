@@ -8,12 +8,19 @@ import net.minecraft.block.material.Material;
 import skizlit.jcmods.common.blocks.BlockBasic;
 import skizlit.jcmods.common.blocks.BlockOre;
 import skizlit.jcmods.common.blocks.BlockTanzaniteOre;
+import skizlit.jcmods.common.blocks.machines.CobbleGenerator;
 
 public class JCModsBlocks {
 	
 	// Blocks Array
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
+	/*
+	 * Custom Blocks
+	 */
+	public static final Block COBBLE_GEN = new CobbleGenerator();
+	
+		
 	// Block
 	public static final Block BLOCK_CERIUM = new BlockBasic("blockCerium", Material.IRON);
 	public static final Block BLOCK_RHODIUM = new BlockBasic("blockRhodium", Material.IRON);
