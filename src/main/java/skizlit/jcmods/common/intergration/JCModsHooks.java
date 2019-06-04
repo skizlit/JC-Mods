@@ -30,7 +30,7 @@ public class JCModsHooks {
     public void hookPostInit() {
         if (MekanismLoaded) {
         	mekanismHooks();
-            JCMods.logger.info("Mekanism: successfully");
+            JCMods.logger.info("JCMods: Mekanism successfully Hooked");
         }
     }
     

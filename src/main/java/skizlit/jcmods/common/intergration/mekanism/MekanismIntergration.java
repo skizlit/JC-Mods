@@ -4,6 +4,8 @@ import mekanism.api.MekanismAPI;
 import mekanism.api.MekanismRecipeHelper;
 import mekanism.api.gas.GasRegistry;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fml.common.event.FMLInterModComms;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.JCModsItems;
@@ -18,22 +20,33 @@ public class MekanismIntergration {
 	
 	public void crusherRecipes() {
 		try {
+			
+			ItemStack itemInput = new ItemStack(JCModsItems.CLUMP, 1, 0);
+			ItemStack itemOuput = new ItemStack(JCModsItems.DUST_DIRTY, 1, 0);
+			
+			NBTTagCompound recipeTag = new NBTTagCompound();
+			recipeTag.setTag("input", itemInput.writeToNBT(new NBTTagCompound()));
+			recipeTag.setTag("output", itemOuput.writeToNBT(new NBTTagCompound()));		
+			
+			boolean added = FMLInterModComms.sendMessage("mekanism", "addCrusherRecipe", recipeTag);
+			
+			JCMods.logger.info("JCMods: Crusher passed - " + added);
 			/*
 		 	* Clumps
 		 	*/
-			helper.addCrusherRecipe(new ItemStack(JCModsItems.CLUMP, 1, 0), new ItemStack(JCModsItems.DUST_DIRTY, 1, 0));
-			helper.addCrusherRecipe(new ItemStack(JCModsItems.CLUMP, 1, 1), new ItemStack(JCModsItems.DUST_DIRTY, 1, 1));
+			//helper.addCrusherRecipe(new ItemStack(JCModsItems.CLUMP, 1, 0), new ItemStack(JCModsItems.DUST_DIRTY, 1, 0));
+			//helper.addCrusherRecipe(new ItemStack(JCModsItems.CLUMP, 1, 1), new ItemStack(JCModsItems.DUST_DIRTY, 1, 1));
 			
 			/*
 		 	* Gems
 		 	*/
-			helper.addCrusherRecipe(new ItemStack(JCModsItems.GEM, 1, 0), new ItemStack(JCModsItems.DUST, 1, 2));
+			//helper.addCrusherRecipe(new ItemStack(JCModsItems.GEM, 1, 0), new ItemStack(JCModsItems.DUST, 1, 2));
 			
 			/*
 		 	* Ingots
 		 	*/
-			helper.addCrusherRecipe(new ItemStack(JCModsItems.INGOT, 1, 0), new ItemStack(JCModsItems.DUST, 1, 0));
-			helper.addCrusherRecipe(new ItemStack(JCModsItems.INGOT, 1, 1), new ItemStack(JCModsItems.DUST, 1, 1));
+			//helper.addCrusherRecipe(new ItemStack(JCModsItems.INGOT, 1, 0), new ItemStack(JCModsItems.DUST, 1, 0));
+			//helper.addCrusherRecipe(new ItemStack(JCModsItems.INGOT, 1, 1), new ItemStack(JCModsItems.DUST, 1, 1));
 		}
 		catch(Exception e) {
 			JCMods.logger.info("Mekanism: Crusher - Failed");
