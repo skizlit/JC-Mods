@@ -12,7 +12,7 @@ import skizlit.jcmods.common.JCModsItems;
 
 public class MekanismIntergration {
 
-	private static MekanismRecipeHelper helper = MekanismAPI.recipeHelper();
+	private static MekanismRecipeHelper helper = null;
 	
 	public MekanismIntergration() {
 		helper = MekanismAPI.recipeHelper();
