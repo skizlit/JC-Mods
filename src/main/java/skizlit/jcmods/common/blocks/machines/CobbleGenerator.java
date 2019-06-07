@@ -26,6 +26,7 @@ import net.minecraft.world.World;
 import skizlit.jcmods.common.JCMods;
 import skizlit.jcmods.common.JCModsBlocks;
 import skizlit.jcmods.common.blocks.BlockBaseJCMods;
+import skizlit.jcmods.common.blocks.machines.tileentity.TileEntityCobbleGenerator;
 import skizlit.jcmods.common.util.interfaces.Reference;
 
 public class CobbleGenerator extends BlockBaseJCMods implements ITileEntityProvider{
@@ -62,9 +63,10 @@ public class CobbleGenerator extends BlockBaseJCMods implements ITileEntityProvi
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		if(!worldIn.isRemote) {
-			playerIn.openGui(JCMods.instance, Reference.GUI_COBBLEGENERATOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
-		}
+		if(!worldIn.isRemote) 
+			return true;
+			
+		playerIn.openGui(JCMods.instance, Reference.GUI_COBBLEGENERATOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		
 		return true;
 	}
