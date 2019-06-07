@@ -13,7 +13,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -53,6 +52,12 @@ public class CobbleGenerator extends BlockBaseJCMods implements ITileEntityProvi
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
 		return new TileEntityCobbleGenerator();
+	}
+	
+	@Override
+	public boolean hasTileEntity(IBlockState state) 
+	{
+		return true;
 	}
 	
 	@Override
@@ -110,13 +115,6 @@ public class CobbleGenerator extends BlockBaseJCMods implements ITileEntityProvi
 	}
 	
 	@Override
-	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		TileEntityCobbleGenerator tileEntityIn = (TileEntityCobbleGenerator)worldIn.getTileEntity(pos);
-		InventoryHelper.dropInventoryItems(worldIn, pos, tileEntityIn);
-		super.breakBlock(worldIn, pos, state);
-	}
-	
-	@Override
 	public EnumBlockRenderType getRenderType(IBlockState state) {
 		return EnumBlockRenderType.MODEL;
 	}
@@ -138,10 +136,8 @@ public class CobbleGenerator extends BlockBaseJCMods implements ITileEntityProvi
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		EnumFacing facing = EnumFacing.byIndex(meta);
-		
-		if (facing.getAxis() == EnumFacing.Axis.Y) facing = EnumFacing.NORTH;
-		
+		EnumFacing facing = EnumFacing.byIndex(meta);		
+		if (facing.getAxis() == EnumFacing.Axis.Y) facing = EnumFacing.NORTH;	
 		return this.getDefaultState().withProperty(FACING, facing);
 	}
 	

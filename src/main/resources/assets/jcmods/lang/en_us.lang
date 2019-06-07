@@ -30,6 +30,7 @@ itemGroup.tabJCMods=JC Mods
 
 # Custom Machines
 tile.cobbleGenerator.name=Cobblestone Generator
+container.CobbleGenerator
 
 # Dirty Dusts
 item.dustDirtyCerium.name=Dirty Cerium Dust
