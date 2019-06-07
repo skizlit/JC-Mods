@@ -24,21 +24,31 @@ public class JCModsHooks {
     }
     
     public void hookInit() {
-
+    	if (MekanismLoaded) {
+        	mekanismHooks();
+        }
     }
     
     public void hookPostInit() {
-        if (MekanismLoaded) {
-        	mekanismHooks();
-            JCMods.logger.info("JCMods: Mekanism successfully Hooked");
-        }
+
     }
     
     @Optional.Method(modid = MEKANISM_MOD_ID)
     private static void mekanismHooks() {
     	MekanismIntergration mekanismHook = new MekanismIntergration();
+    	try {
+    		mekanismHook.crusherRecipes();
+
+    		JCMods.logger.info("JCMods: Mekanism successfully Hooked");
+    	}    
+    	catch(Exception e) {
+			JCMods.logger.info("JCMods: Mekanism failed to Hook");
+		}
+    	
+    	
+    	
     	//mekanismHook.chemicalInjectionChamberRecipes();
-    	mekanismHook.crusherRecipes();
+    	//mekanismHook.crusherRecipes();
     	//mekanismHook.enrichmentChamberRecipes();
     	//mekanismHook.purificationChamberRecipes();
     }
