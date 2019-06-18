@@ -9,7 +9,7 @@ public class BlockOre extends BlockBaseJCMods implements IMetaBlock{
 	public BlockOre(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.STONE);
-		setHardness(this.getBlockResistance());
+		setHardness(getBlockResistance());
 		setResistance(this.getBlockHardness());
 		setHarvestLevel("pickaxe", this.getBlockHarvestLevel());
 	}
@@ -26,7 +26,7 @@ public class BlockOre extends BlockBaseJCMods implements IMetaBlock{
 	
 	@Override
 	public float getBlockHardness() {
-		return 2;
+		return 1.5f;
 	}
 	
 	@Override

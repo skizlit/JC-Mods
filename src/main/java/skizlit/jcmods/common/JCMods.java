@@ -66,7 +66,7 @@ public class JCMods
     @EventHandler
     public void init(FMLPostInitializationEvent event)
     {
-    	
+    	proxy.registerTileEntities();
     }
     
     @SubscribeEvent

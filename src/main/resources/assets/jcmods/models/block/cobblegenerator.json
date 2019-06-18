@@ -1,12 +1,42 @@
 {
-	"parent": "block/orientable",
 	"textures": {
-	"particle": "jcmods:blocks/cobblegenerator",
-	"up": "jcmods:blocks/cobblegenerator_side",
-	"down": "jcmods:blocks/cobblegenerator_side",
-	"north": "jcmods:blocks/cobblegenerator",
-	"east": "jcmods:blocks/cobblegenerator_side",
-	"south": "jcmods:blocks/cobblegenerator_side",
-	"west": "jcmods:blocks/cobblegenerator_side"
+		"front": "jcmods:blocks/cobblegenerator_front_on",
+		"side": "jcmods:blocks/cobblegenerator_side",
+		"top": "jcmods:blocks/cobblegenerator_side",
+		"particle": "jcmods:blocks/cobblegenerator_front_on"
+	},
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#side", "cullface": "side" },
+                "up":    { "texture": "#side", "cullface": "side" },
+                "north": { "texture": "#front", "cullface": "front" },
+                "south": { "texture": "#side", "cullface": "side" },
+                "west":  { "texture": "#side", "cullface": "side" },
+                "east":  { "texture": "#side", "cullface": "side" }
+            }
+        }
+    ],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"scale": [0.6, 0.6, 0.6],
+			"rotation": [20, -145, 0]
+		}
 	}
 }

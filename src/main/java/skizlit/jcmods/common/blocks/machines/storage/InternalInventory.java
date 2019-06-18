@@ -1,7 +1,6 @@
 package skizlit.jcmods.common.blocks.machines.storage;
 
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.math.BlockPos;
@@ -16,15 +15,15 @@ public class InternalInventory extends ItemStackHandler {
 	private final boolean canInsert, canExtract;
 	
 	public InternalInventory(int inventorySize) {
-		this("", inventorySize, true, true);
+		this(null, inventorySize, true, true);
 	}
 	   
 	public InternalInventory(String name, int inventorySize) {
-		this("", inventorySize, true, true);
+		this(null, inventorySize, true, true);
 	}
 	
 	public InternalInventory(int inventorySize, boolean canInsert, boolean canExtract) {
-		this("", inventorySize, true, true);
+		this(null, inventorySize, true, true);
 	}
 	
 	public InternalInventory(String name, int inventorySize, boolean canInsert, boolean canExtract) {
@@ -88,6 +87,18 @@ public class InternalInventory extends ItemStackHandler {
     }
     
     /**
+     *  Used to extract full stack items
+     */
+	public ItemStack getAndRemoveSlot(int slot)	{
+		ItemStack extract = this.getStackInSlot(slot).copy();
+		
+		if(!extract.isEmpty())
+			this.setStackInSlot(slot, ItemStack.EMPTY);
+		
+		return extract;
+	}
+	
+    /**
      * Inserts an ItemStack into the inventory filling at each available slot till no more slots are available. 
      */	
 	public ItemStack insertItemFirstAvaliableSlot(ItemStack stack, boolean simulate) {		
@@ -134,14 +145,28 @@ public class InternalInventory extends ItemStackHandler {
 	{
 		return canInsert;
 	}
-		
+	
+	/**
+	 * This will drop all items in inventory
+	 */
+	public void dropInventory(World world, BlockPos pos) {
+        for (int i = 0; i < this.getSlots(); ++i)
+        {
+        	ItemStack stack = getAndRemoveSlot(i);
+        	
+        	if(!stack.isEmpty()){
+        		world.spawnEntity(new EntityItem(world, pos.getX(), pos.getY()+1, pos.getZ(), stack));
+        	}
+        }
+	}
+	
     public void writeToNBT(NBTTagCompound compound)
     {
-    	compound.setTag("Inventory", serializeNBT());
+    	compound.setTag("inventory", serializeNBT());
     }
      
     public void readFromNBT(NBTTagCompound compound)
     {
-    	deserializeNBT(compound.getCompoundTag("Inventory"));
+    	deserializeNBT(compound.getCompoundTag("inventory"));
     }
 }

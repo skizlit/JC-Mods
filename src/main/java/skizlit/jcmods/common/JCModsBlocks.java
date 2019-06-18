@@ -19,7 +19,6 @@ public class JCModsBlocks {
 	 * Custom Blocks
 	 */
 	public static final Block COBBLE_GEN = new CobbleGenerator();
-	
 		
 	// Block
 	public static final Block BLOCK_CERIUM = new BlockBasic("blockCerium", Material.IRON);

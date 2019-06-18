@@ -83,3 +83,6 @@ item.tanzaniteHoe.name=Tanzanite Hoe
 item.tanzanitePickaxe.name=Tanzanite Pickaxe
 item.tanzaniteShovel.name=Tanzanite Shovel
 item.tanzaniteSword.name=Tanzanite Sword
+
+// Mod Blocks
+tile.cobbleGenerator.name=Cobblestone Generator

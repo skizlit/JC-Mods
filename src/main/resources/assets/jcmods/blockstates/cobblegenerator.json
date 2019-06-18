@@ -1,12 +1,22 @@
 {
+	"forge_marker": 1,
+		"defaults": {
+    	"model": "jcmods:cobblegenerator"
+  	},
     "variants": {
-        "burning=false,facing=north": { "model": "jcmods:cobbleGenerator" },
-        "burning=false,facing=east": { "model": "jcmods:cobbleGenerator", "y": 90 },
-        "burning=false,facing=south": { "model": "jcmods:CobbleGenerator", "y": 180 },
-        "burning=false,facing=west": { "model": "jcmods:cobbleGenerator", "y": 270 },
-        "burning=true,facing=north": { "model": "jcmods:cobbleGenerator_On" },
-        "burning=true,facing=east": { "model": "jcmods:cobbleGenerator_On", "y": 90 },
-        "burning=true,facing=south": { "model": "jcmods:cobbleGenerator_On", "y": 180 },
-        "burning=true,facing=west": { "model": "jcmods:cobbleGenerator_On", "y": 270 }
+        "facing": { 
+			"north": { "model": "jcmods:cobblegenerator"},
+			"south": { "model": "jcmods:cobblegenerator", "y": 180 },
+			"west":  { "model": "jcmods:cobblegenerator", "y": 270 },
+			"east":  { "model": "jcmods:cobblegenerator", "y": 90}
+		},
+		"isburning": {
+			"true": {
+				"textures": { "0": "jcmods:cobblegenerator_front_on"	}
+			},
+			"false": { 
+				"textures": { "0": "jcmods:cobblegenerator_front_off" }
+			}
+		}
     }
 }

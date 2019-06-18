@@ -40,7 +40,7 @@ public class BlockTanzaniteOre extends BlockBaseJCMods implements IMetaBlock {
 	
 	@Override
 	public float getBlockHardness() {
-		return 2;
+		return 1.5f;
 	}
 	
 	@Override
